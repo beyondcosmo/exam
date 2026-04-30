@@ -1,14 +1,12 @@
-// Manicurist (Nail Technology) State Board Practice Exam — Question Bank
-// Updated: April 2026 PSI Content Outline Weighting
-// April 1, 2026 PSI Categories: Safety & Infection Control ~45% | Nail Care ~25%
-// Client Consultation & Nail Analysis ~20% | Skin Care ~10%
-// Total questions: 120+  (2× the 60-question exam)
+// Manicurist State Board Practice Exam — Question Bank
+// April 1, 2026 PSI Content Outline (effective for all CA test takers)
+// Safety & Infection Control 50% | Nail Care 22% | Client Consultation & Nail Analysis 18% | Skin Care 10%
 
-window.EXAM_QUESTIONS = [
+window.QUESTION_BANK = {
 
-  // ─── SAFETY & INFECTION CONTROL (50%) ────────────────────────────────────
-
-  {
+  // ic
+  ic: [
+{
     q: "A client presents with green discoloration under a nail tip that was applied three weeks ago. The CORRECT course of action is to:",
     opts: [
       "Remove the enhancement, clean the nail, and apply a fresh tip",
@@ -350,9 +348,7 @@ window.EXAM_QUESTIONS = [
     exp: "E-files generate significant heat (risk of nail plate burns), vibration (nerve and tissue damage), and fine dust (respiratory hazard). Correct bit speed, angle, and technique are essential to avoid injury. A dust mask or respirator protects against inhalation of fine particulate matter."
   },
 
-  // ─── SAFETY & INFECTION CONTROL (continued — additional questions) ─────────
-
-  {
+{
     q: "Which section of the Safety Data Sheet (SDS) lists the first aid measures a worker should take if exposed to a hazardous chemical?",
     opts: [
       "Section 2 — Hazard Identification",
@@ -593,11 +589,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "The CBBC can issue citations, impose fines, and order corrective action. Repeat violations or immediate danger to public health can result in suspension of operations. California's pedicure basin sanitation regulations are strictly enforced because multiple infection outbreaks have been linked to unsanitary foot basins."
-  },
+  }
+  ],
 
-  // ─── CLIENT CONSULTATION & NAIL ANALYSIS (20%) ──────────────────────────
-
-  {
+  // na
+  na: [
+{
     q: "What is the technical name for the natural nail?",
     opts: [
       "Onychium",
@@ -794,11 +791,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "As the body ages, nail growth slows, longitudinal ridges become more prominent (a normal finding), nails may become more brittle, and some discoloration can occur. These are normal aging changes. Technicians should use extra gentleness with older clients and recommend good nail care practices."
-  },
+  }
+  ],
 
-  // ─── NAIL CARE: Manicuring & Pedicuring ─────────────────────────────────
-
-  {
+  // nc
+  nc: [
+{
     q: "When performing a manicure, cuticle softener is applied to:",
     opts: [
       "The nail plate to enhance polish adhesion",
@@ -942,9 +940,7 @@ window.EXAM_QUESTIONS = [
     exp: "Nail wraps are thin fabric overlays (silk, fiberglass, or linen) adhered to the nail with resin to strengthen, repair breaks, or create light overlays. They are a lower-chemical alternative to acrylic enhancements. Removal requires acetone soaking or gentle filing."
   },
 
-  // ─── NAIL CARE: Nail Enhancements ───────────────────────────────────────
-
-  {
+{
     q: "The PRIMARY chemical in acrylic nail enhancements that poses the greatest risk of causing allergic sensitization is:",
     opts: [
       "Polymer powder",
@@ -1155,10 +1151,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "While nail services are generally considered low-risk in pregnancy, good ventilation and minimizing exposure to strong chemical fumes (monomers, primers) are prudent. No enhancement system has been specifically cleared for pregnancy by the FDA. Client comfort is also important — a large abdomen affects positioning, and the client should be seated comfortably without prolonged bending or pressure on the abdomen."
-  },
+  }
+  ],
 
-  // ─── SKIN CARE (10%) — new April 2026 category ───────────────────────────
-  // Covers basic hand/foot skin care within the manicurist scope of practice:
+  // sk
+  sk: [
+// Covers basic hand/foot skin care within the manicurist scope of practice:
   // skin anatomy relevant to nail services, moisturizing, exfoliation, massage,
   // and recognizing conditions outside scope.
 
@@ -1294,5 +1292,5 @@ window.EXAM_QUESTIONS = [
     ans: 1,
     exp: "Paronychia is an infection of the skin adjacent to the nail plate, typically at the cuticle or lateral nail fold. Acute paronychia (often bacterial, commonly Staphylococcus aureus) presents with redness, warmth, swelling, and tenderness. Without pus it is in the early inflammatory stage; with pus it may require incision and drainage. It is outside scope of practice — the manicurist must decline the service and refer the client to a physician."
   }
-
-];
+  ],
+};
