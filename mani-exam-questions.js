@@ -4,7 +4,7 @@
 // Client Consultation & Nail Analysis ~20% | Skin Care ~10%
 // Total questions: 120+  (2× the 60-question exam)
 
-const questions = [
+window.EXAM_QUESTIONS = [
 
   // ─── SAFETY & INFECTION CONTROL (50%) ────────────────────────────────────
 
