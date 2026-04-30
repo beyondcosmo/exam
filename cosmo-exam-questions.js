@@ -5,7 +5,7 @@
 // Nail Care 8% | Eyelash & Eyebrow 4% | Skin Care 4% | Haircutting 3% | Hairstyling 2%
 // Target: 200 questions (2× the 100-question exam)
 
-const questions = [
+window.EXAM_QUESTIONS = [
 
   // ─── SAFETY & INFECTION CONTROL (30%) — target 60 questions ─────────────
 
