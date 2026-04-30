@@ -3,7 +3,7 @@
 // April 1, 2026 PSI Categories: Safety & IC: 40% | Client Consultation & Skin Analysis: 19%
 // Skin Care: 17% | Hair Removal: 13% | Makeup: 7% | Eyelash & Eyebrow: 6% | Advanced: 3%
 
-const questions = [
+window.EXAM_QUESTIONS = [
 
   // ─── SAFETY & INFECTION CONTROL (40%) ────────────────────────────────────
 
