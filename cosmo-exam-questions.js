@@ -1524,12 +1524,12 @@ const questions = [
     q: "When performing a basic pedicure on a client with heel calluses, the cosmetologist should use:",
     opts: [
       "A credo blade for fastest, most thorough callus removal",
-      "A foot file or pumice stone to gently reduce callus thickness",
+      "A foot file or abrasive board to gently reduce callus thickness",
       "A razor blade designed for cosmetology use",
       "Chemical callus removers with phenol for deep callus removal"
     ],
     ans: 1,
-    exp: "California regulations prohibit cosmetologists and manicurists from using credo blades, razors, or scalpels — cutting calluses constitutes the practice of medicine. Acceptable tools are foot files, pumice stones, and OTC callus softeners."
+    exp: "California regulations prohibit cosmetologists and manicurists from using credo blades, razors, or scalpels — cutting calluses constitutes the practice of medicine. Acceptable tools are foot files, abrasive boards, and OTC callus softeners."
   },
   {
     q: "Nail plate staining from prolonged dark polish wear can be prevented by:",
