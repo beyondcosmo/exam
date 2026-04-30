@@ -840,7 +840,7 @@ const questions = [
       "They are only designed for acrylic nail preparation"
     ],
     ans: 2,
-    exp: "Credo blades and callus razors are prohibited for use by cosmetologists and manicurists in California (and most states) because they cut into the skin and create open wounds, which pose a serious infection risk. Acceptable alternatives include foot files, pumice stones, and callus softeners."
+    exp: "Credo blades and callus razors are prohibited for use by cosmetologists and manicurists in California (and most states) because they cut into the skin and create open wounds, which pose a serious infection risk. Acceptable alternatives include foot files, abrasive boards, and callus softeners."
   },
   {
     q: "The correct sequence for polishing nails is:",
@@ -1171,7 +1171,7 @@ const questions = [
       "Hypodermis — the subcutaneous fat layer"
     ],
     ans: 1,
-    exp: "The stratum corneum is the outermost epidermal layer composed of flat, dead, keratinized cells (corneocytes). Soaking in warm water softens this layer; exfoliation (scrubs, files, pumice) removes its thickened or roughened areas. Manicurists work on this surface layer. The deeper layers (stratum basale, dermis) are not accessible through standard nail services."
+    exp: "The stratum corneum is the outermost epidermal layer composed of flat, dead, keratinized cells (corneocytes). Soaking in warm water softens this layer; exfoliation (scrubs, files, abrasive boards) removes its thickened or roughened areas. Manicurists work on this surface layer. The deeper layers (stratum basale, dermis) are not accessible through standard nail services."
   },
   {
     q: "Calluses that form on the palms and fingertips are a direct result of:",
@@ -1204,7 +1204,7 @@ const questions = [
       "Disinfecting the skin surface to prevent bacterial growth"
     ],
     ans: 1,
-    exp: "Exfoliation (physical or chemical) removes accumulated dead cells from the stratum corneum. This smooths the skin surface, improves the absorption of subsequently applied moisturizers and treatments, and stimulates mild circulation. Manicurists use physical exfoliants (sugar/salt scrubs, pumice) or enzyme-based gentle chemical exfoliants. Over-exfoliation can damage the skin barrier."
+    exp: "Exfoliation (physical or chemical) removes accumulated dead cells from the stratum corneum. This smooths the skin surface, improves the absorption of subsequently applied moisturizers and treatments, and stimulates mild circulation. Manicurists use physical exfoliants (sugar/salt scrubs, abrasive boards) or enzyme-based gentle chemical exfoliants. Over-exfoliation can damage the skin barrier."
   },
   {
     q: "During a paraffin wax treatment for the hands, the primary benefit is:",
