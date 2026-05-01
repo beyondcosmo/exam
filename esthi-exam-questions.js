@@ -1,13 +1,15 @@
 // Esthetician State Board Practice Exam — Question Bank
-// Updated: April 2026 PSI Content Outline Weighting
-// April 1, 2026 PSI Categories: Safety & IC: 40% | Client Consultation & Skin Analysis: 19%
-// Skin Care: 17% | Hair Removal: 13% | Makeup: 7% | Eyelash & Eyebrow: 6% | Advanced: 3%
+// April 1, 2026 PSI Content Outline (effective for all CA test takers)
+// Safety & Infection Control 40% | Client Consultation & Skin Analysis 19%
+// Skin Care 17% | Hair Removal 15% | Eyelash & Eyebrow 6% | Makeup 3%
+// Note: "Advanced Treatments" was removed as a standalone category in the 2025 outline;
+//       those questions are folded into Skin Care (sc).
 
-window.EXAM_QUESTIONS = [
+window.QUESTION_BANK = {
 
-  // ─── SAFETY & INFECTION CONTROL (40%) ────────────────────────────────────
-
-  {
+  // ic
+  ic: [
+{
     q: "A client arrives with a small open lesion on her chin from picking a blemish. What is the MOST appropriate action?",
     opts: [
       "Proceed with the facial but avoid direct pressure on the area",
@@ -459,595 +461,7 @@ window.EXAM_QUESTIONS = [
     exp: "Disinfectant solutions degrade over time and lose efficacy as they become contaminated with organic matter. Most manufacturers specify a maximum use time and require solution changes when visibly cloudy or contaminated, or minimally once per day."
   },
 
-  // ─── CLIENT CONSULTATION & SKIN ANALYSIS (19%) ───────────────────────────
-
-  {
-    q: "A client with Fitzpatrick Type IV skin seeks laser hair removal. Which concern is MOST clinically relevant?",
-    opts: [
-      "Type IV skin does not respond to laser and should not receive it",
-      "Type IV skin has increased melanin and is at higher risk for post-inflammatory hyperpigmentation and burns from laser",
-      "Type IV skin requires twice the laser energy compared to Type I",
-      "Fitzpatrick type has no relevance to laser hair removal outcomes"
-    ],
-    ans: 1,
-    exp: "Fitzpatrick Type IV skin tans easily and has higher melanin concentration, which can absorb laser energy unintentionally, increasing the risk of PIH, burns, and other complications. Careful selection of wavelength, pulse duration, and fluence is required."
-  },
-  {
-    q: "Intrinsic aging of the skin is PRIMARILY caused by:",
-    opts: [
-      "Repeated UV exposure over decades",
-      "Cigarette smoking and environmental pollutants",
-      "Chronological aging, genetics, and hormonal changes",
-      "Repeated facial expressions causing permanent lines"
-    ],
-    ans: 2,
-    exp: "Intrinsic (chronological) aging is driven by internal factors: genetics, hormonal decline, cellular metabolism changes, and the natural slowing of collagen and elastin production. UV damage, smoking, and lifestyle factors contribute to extrinsic (premature) aging."
-  },
-  {
-    q: "A client's skin is oily in the T-zone but dry and flaky on the cheeks. This BEST describes:",
-    opts: [
-      "Oily skin type",
-      "Dehydrated skin condition",
-      "Combination skin type",
-      "Sensitized skin condition"
-    ],
-    ans: 2,
-    exp: "Combination skin is a genetic skin TYPE characterized by oiliness in the T-zone (forehead, nose, chin) with dryness elsewhere. It is distinct from dehydration (insufficient water content) or sensitized skin (reactive to stimuli)."
-  },
-  {
-    q: "During skin analysis under magnification, you observe multiple yellowish dome-shaped papules with a central pore on a middle-aged client's cheeks. This MOST likely represents:",
-    opts: [
-      "Closed comedones (milia)",
-      "Sebaceous hyperplasia",
-      "Basal cell carcinoma",
-      "Grade II acne"
-    ],
-    ans: 1,
-    exp: "Sebaceous hyperplasia presents as yellowish, donut-shaped or dome-shaped papules with a central indentation (pore), most common in middle-aged to older adults with oily skin. They are benign enlarged oil glands and outside the esthetician's scope of treatment."
-  },
-  {
-    q: "Which factor would MOST significantly affect the outcome of a superficial chemical peel?",
-    opts: [
-      "The client's eye color",
-      "Current use of topical retinoids at home",
-      "The client's preference for fragrance-free products",
-      "The ambient humidity in the treatment room"
-    ],
-    ans: 1,
-    exp: "Topical retinoids (retinol, tretinoin) thin the stratum corneum and increase skin sensitivity. Current or recent use can cause over-exfoliation, burns, or prolonged recovery from a chemical peel. This must always be disclosed during consultation."
-  },
-  {
-    q: "A client complains her skin has become 'suddenly sensitive' to products she has used for years. What factor is MOST commonly responsible?",
-    opts: [
-      "A change in natural skin type from dry to oily",
-      "Barrier function disruption from over-exfoliation or harsh products",
-      "An increase in melanocyte activity",
-      "Reduced sebum production with age"
-    ],
-    ans: 1,
-    exp: "Acquired (sensitized) skin most commonly results from barrier function disruption caused by over-exfoliation, harsh ingredients, or inappropriate products. A compromised barrier allows irritants to penetrate and triggers reactivity."
-  },
-  {
-    q: "When analyzing a client with Fitzpatrick Type VI skin, the treatment concern of GREATEST importance is:",
-    opts: [
-      "The client will not respond to chemical exfoliants",
-      "The client is highly prone to sunburn and UV damage",
-      "The client is at increased risk of post-inflammatory hyperpigmentation from any inflammatory trigger",
-      "The client's skin cannot tolerate hyaluronic acid-based serums"
-    ],
-    ans: 2,
-    exp: "Fitzpatrick Types V and VI have highly active melanocytes that respond aggressively to inflammation. Any irritating, traumatic, or inflammatory procedure (waxing, aggressive peels, extractions) can trigger PIH, making conservative, gentle approaches essential."
-  },
-  {
-    q: "A client who is three months pregnant inquires about services. Which presents the GREATEST contraindications?",
-    opts: [
-      "Gentle cleansing facials and hydrating masks",
-      "Strong chemical peels, essential oil aromatherapy, and electrical modalities",
-      "Brow shaping and tinting",
-      "Applying mineral SPF sunscreen"
-    ],
-    ans: 1,
-    exp: "During pregnancy, high-percentage chemical peels risk systemic absorption; many essential oils are contraindicated; electrical modalities (galvanic, high-frequency) may pose risks to the fetus. Gentle, fragrance-free, non-invasive services are recommended; consult physician for specifics."
-  },
-  {
-    q: "What BEST distinguishes a skin 'type' from a skin 'condition'?",
-    opts: [
-      "Skin type is temporary and changes seasonally; skin conditions are permanent",
-      "Skin type is genetically determined and relatively fixed; skin conditions are influenced by internal/external factors and are changeable",
-      "Skin type is determined by products used; skin conditions are genetic",
-      "There is no meaningful clinical distinction between the two"
-    ],
-    ans: 1,
-    exp: "Skin TYPE is genetically determined and describes the inherent oil-producing tendency (normal, dry, oily, combination). Skin CONDITIONS (dehydration, hyperpigmentation, acne, sensitization) are influenced by environmental, hormonal, and lifestyle factors and can be changed with proper treatment."
-  },
-  {
-    q: "A client presents with symmetrical brownish discoloration on both cheeks that worsened during pregnancy. The esthetician should suspect:",
-    opts: [
-      "Melasma (chloasma)",
-      "Tinea versicolor",
-      "Seborrheic keratosis",
-      "Vitiligo"
-    ],
-    ans: 0,
-    exp: "Melasma (chloasma) is a hormonally triggered hyperpigmentation disorder that appears symmetrically on the cheeks, forehead, and upper lip. It is strongly associated with pregnancy ('mask of pregnancy'), oral contraceptives, and UV exposure. Referral for physician diagnosis is appropriate."
-  },
-  {
-    q: "You notice a suspicious lesion on a client's cheek — irregular shape, multi-colored, approximately 7mm in diameter. You should:",
-    opts: [
-      "Perform the facial normally but document the mole's appearance",
-      "Apply an enzyme mask and monitor for changes at the next appointment",
-      "Inform the client of your observation, avoid treatment on the lesion, and strongly recommend evaluation by a dermatologist",
-      "Photograph the lesion for your records and continue service as planned"
-    ],
-    ans: 2,
-    exp: "Any lesion meeting ABCDE criteria (asymmetry, irregular border, multiple colors, diameter >6mm, evolving) must be referred to a dermatologist. Estheticians cannot diagnose skin disease. Documenting concern, avoiding the lesion, and making a referral protects both client and professional."
-  },
-  {
-    q: "A new client has very fair skin, freckles, and always burns with sun exposure but never tans. She would be classified as Fitzpatrick:",
-    opts: [
-      "Type I — Always burns, never tans",
-      "Type II — Burns easily, tans minimally",
-      "Type III — Tans well, moderate burn",
-      "Type IV — Burns minimally, tans easily"
-    ],
-    ans: 0,
-    exp: "Fitzpatrick Type I is characterized by very fair skin, freckling, always burning, and inability to tan. It has the lowest level of melanin protection and is most susceptible to UV damage and skin cancers."
-  },
-  {
-    q: "A client uses a nightly retinol serum and glycolic acid scrub at home. For a professional facial, the esthetician should MOST likely:",
-    opts: [
-      "Perform a medium-depth chemical peel to complement her home routine",
-      "Perform only gentle, non-exfoliating treatments as her skin barrier may already be stressed",
-      "Skip cleansing since the client's skin is already clean",
-      "Recommend discontinuing all home care for two weeks before each facial"
-    ],
-    ans: 1,
-    exp: "Combining professional chemical exfoliation with aggressive home retinol/AHA use risks over-exfoliation and barrier disruption. The esthetician should assess the skin condition, choose gentle modalities, and educate the client on balancing home and professional treatments."
-  },
-  {
-    q: "Which condition is CORRECTLY identified as a contraindication to any exfoliating service?",
-    opts: [
-      "Mild comedonal acne with no active inflammation",
-      "Active rosacea with pustules and significant erythema",
-      "Post-acne hyperpigmentation without active lesions",
-      "Slightly dehydrated skin with surface tightness"
-    ],
-    ans: 1,
-    exp: "Active rosacea with pustules represents an inflamed, reactive state. Exfoliation (mechanical or chemical) would further irritate the vascular and sensitive skin, potentially causing significant flaring. Post-acne marks, mild comedones, and dehydration may benefit from appropriate gentle exfoliation."
-  },
-  {
-    q: "The PRIMARY treatment goal for sensitized skin is to:",
-    opts: [
-      "Deep exfoliate to remove dead cells causing sensitivity",
-      "Strengthen and restore the skin's barrier function through calming, supportive treatments",
-      "Reduce sebum production with astringent-based products",
-      "Use high-frequency current to increase blood circulation"
-    ],
-    ans: 1,
-    exp: "Sensitized skin has a compromised barrier. The primary treatment goal is to repair and restore barrier function using gentle, fragrance-free, calming formulations — such as ceramides, niacinamide, and soothing botanicals — while avoiding further irritation."
-  },
-  {
-    q: "During consultation, which finding would MOST indicate a physician referral rather than proceeding with a facial treatment?",
-    opts: [
-      "Comedones on the nose and forehead",
-      "Mild hyperpigmentation on the cheeks",
-      "A rapidly growing, crusting, and bleeding lesion on the face",
-      "Dry patches on the cheeks"
-    ],
-    ans: 2,
-    exp: "A rapidly growing, crusting, or bleeding lesion is a red flag for potential skin cancer. This falls outside the esthetician's scope of practice — a medical referral is mandatory. Comedones and mild hyperpigmentation can be addressed in the esthetics setting."
-  },
-  {
-    q: "A client has oily skin but reports skin 'feels tight and dry' after cleansing. This discrepancy is MOST likely caused by:",
-    opts: [
-      "Normal oily skin characteristics",
-      "Use of an overly stripping cleanser that removes surface lipids and disrupts the acid mantle",
-      "High water content causing the oily sheen",
-      "An allergic reaction to her current moisturizer"
-    ],
-    ans: 1,
-    exp: "Oily skin can become dehydrated when harsh cleansers strip the lipid layer, triggering more oil production as compensation. 'Oily but tight' after cleansing is a classic sign of a disrupted acid mantle. A balanced, non-stripping cleanser is indicated."
-  },
-  {
-    q: "The Fitzpatrick scale is PRIMARILY used by estheticians to assess:",
-    opts: [
-      "Acne severity",
-      "Risk of inflammatory skin disease",
-      "The skin's response to UV exposure — specifically tendency to burn versus tan",
-      "The client's appropriate product pH tolerance"
-    ],
-    ans: 2,
-    exp: "The Fitzpatrick scale classifies skin types (I–VI) based on the skin's response to UV exposure. It is an essential tool for selecting appropriate laser settings, peel depths, and UV protection recommendations."
-  },
-
-  // ─── SKIN CARE TREATMENTS (17%) ──────────────────────────────────────────
-
-  {
-    q: "Which is the CORRECT order of steps in a standard professional facial?",
-    opts: [
-      "Cleanse → Steam → Mask → Massage → Exfoliate → Tone → Moisturize",
-      "Consultation → Cleanse → Analyze → Exfoliate → Steam → Extractions → Massage → Mask → Tone → Moisturize → SPF",
-      "Steam → Cleanse → Mask → Exfoliate → Massage → Tone → Moisturize",
-      "Cleanse → Exfoliate → Mask → Steam → Extractions → Massage → Tone → Moisturize"
-    ],
-    ans: 1,
-    exp: "The standard facial sequence: consult, cleanse, analyze under magnification, exfoliate to prep, steam/warm towels to soften follicles, extractions if needed, massage for circulation, mask for specific concerns, tone, moisturize, SPF. Each step builds on the last for optimal results."
-  },
-  {
-    q: "AHAs (alpha-hydroxy acids) such as glycolic acid work primarily by:",
-    opts: [
-      "Physically scrubbing dead cells from the skin's surface",
-      "Decreasing sebum production in the follicle",
-      "Loosening the bonds between corneocytes in the stratum corneum to promote chemical exfoliation",
-      "Penetrating the dermis to stimulate fibroblast collagen production"
-    ],
-    ans: 2,
-    exp: "AHAs are water-soluble chemical exfoliants that break down the cohesive forces (desmosomes) between dead skin cells (corneocytes) in the stratum corneum. They do not physically scrub skin. They also increase surface hydration by improving NMF levels."
-  },
-  {
-    q: "Salicylic acid (BHA) has a therapeutic advantage over glycolic acid (AHA) for acne-prone skin because:",
-    opts: [
-      "BHA is stronger and more irritating, producing faster results",
-      "BHA is oil-soluble and can penetrate the sebaceous follicle to exfoliate inside the pore",
-      "BHA increases melanin production to reduce acne scarring",
-      "BHA requires a lower pH than AHAs to achieve similar results"
-    ],
-    ans: 1,
-    exp: "Salicylic acid is lipid (oil)-soluble, which allows it to penetrate into the oil-filled sebaceous follicle and exfoliate the follicle lining from the inside. This makes it especially effective for comedonal and acne-prone skin. AHAs are water-soluble and work primarily on the surface."
-  },
-  {
-    q: "A client with very dry, mature skin asks about mask options. Which mask type would MOST benefit this client?",
-    opts: [
-      "Sulfur mask to control sebum",
-      "Clay (kaolin) mask to absorb excess oil",
-      "Cream or hydrogel mask rich in humectants and emollients",
-      "Charcoal detox mask to clear impurities"
-    ],
-    ans: 2,
-    exp: "Dry, mature skin lacks lipids and moisture. Cream or hydrogel masks with humectants (hyaluronic acid, glycerin) and emollients provide moisture and lipid replenishment. Clay and charcoal masks are absorptive and best for oily skin. Sulfur is used primarily for acne."
-  },
-  {
-    q: "In facial massage, effleurage is PRIMARILY used to:",
-    opts: [
-      "Break up subcutaneous fat deposits",
-      "Apply deep pressure to stimulate deep nerves",
-      "Begin and end massage sequences with light, soothing gliding strokes",
-      "Create friction-induced erythema to boost circulation"
-    ],
-    ans: 2,
-    exp: "Effleurage consists of long, gentle, gliding strokes that introduce the massage, relax the client, improve lymphatic flow, and serve as transitional and closing movements. Petrissage provides kneading; tapotement involves percussive movements; friction provides deep circular pressure."
-  },
-  {
-    q: "High-frequency current in esthetic treatments is used primarily to:",
-    opts: [
-      "Reduce melanin production in hyperpigmented areas",
-      "Generate a germicidal ozone effect and heat to help treat acne-prone skin",
-      "Deeply stimulate fibroblasts to produce new collagen in the dermis",
-      "Perform iontophoresis to drive water-soluble products deeper"
-    ],
-    ans: 1,
-    exp: "High-frequency machines produce alternating current that generates heat and ozone (with violet/neon electrode) with a germicidal effect, making them effective for acne-prone skin. It is NOT used for deep collagen stimulation or iontophoresis."
-  },
-  {
-    q: "Kojic acid is classified as which type of skin care ingredient?",
-    opts: [
-      "Humectant",
-      "Emollient",
-      "Tyrosinase inhibitor (skin brightening/depigmentation agent)",
-      "AHA chemical exfoliant"
-    ],
-    ans: 2,
-    exp: "Kojic acid is a natural compound derived from fungi that inhibits tyrosinase, the enzyme responsible for melanin synthesis. It is used to treat hyperpigmentation, melasma, and uneven skin tone. It is not a humectant, emollient, or exfoliant."
-  },
-  {
-    q: "Which of the following is a physical (mineral) sunscreen active?",
-    opts: [
-      "Octinoxate",
-      "Avobenzone",
-      "Zinc oxide",
-      "Homosalate"
-    ],
-    ans: 2,
-    exp: "Zinc oxide (and titanium dioxide) are physical sunscreen actives that reflect and scatter UV radiation. Octinoxate, avobenzone, and homosalate are chemical UV filters that absorb UV energy and convert it to heat. Physical sunscreens are often preferred for sensitive and post-procedure skin."
-  },
-  {
-    q: "Post-cleanse tightness and discomfort are MOST likely caused by:",
-    opts: [
-      "Normal characteristics of healthy skin",
-      "The cleanser disrupting the skin's acid mantle and stripping surface lipids",
-      "Excess dead skin cells blocking product absorption",
-      "Systemic dehydration from insufficient water intake that day"
-    ],
-    ans: 1,
-    exp: "Tightness after cleansing typically indicates the cleanser was too alkaline or harsh, stripping the skin's natural oils and disrupting the acid mantle (pH ~4.5–5.5). A gentle, pH-balanced cleanser is the solution."
-  },
-  {
-    q: "The SAFEST exfoliating option for a client with active Stage 2 rosacea (papules and pustules) is:",
-    opts: [
-      "Glycolic acid 20% chemical peel",
-      "Physical microdermabrasion",
-      "A gentle enzyme exfoliant (papaya or pineapple) at low concentration",
-      "Salicylic acid 30% chemical peel"
-    ],
-    ans: 2,
-    exp: "Active rosacea with pustules requires the most minimal approach. Gentle enzyme exfoliants at low concentration generate minimal heat and inflammation. High-percentage acid peels and abrasive microdermabrasion are contraindicated during active rosacea flares."
-  },
-  {
-    q: "Toner is applied in a facial treatment primarily to:",
-    opts: [
-      "Add heavy moisturizing lipids back to the skin",
-      "Remove remaining cleanser residue, restore pH balance, and prepare the skin for subsequent products",
-      "Disinfect the skin before treatment",
-      "Create an occlusive protective barrier before massage"
-    ],
-    ans: 1,
-    exp: "Toner removes remaining cleanser residue, helps restore the skin's natural acid mantle pH (~4.5–5.5), and primes the skin to absorb serums and treatments more effectively. Modern toners also deliver hydrating or calming ingredients."
-  },
-  {
-    q: "A serum is applied in the facial sequence:",
-    opts: [
-      "Before cleansing to protect the skin",
-      "After toner and before moisturizer, as the thinnest-consistency treatment product",
-      "After moisturizer to seal active ingredients into the skin",
-      "After the mask and before toner"
-    ],
-    ans: 1,
-    exp: "Serums are low-molecular-weight, active-ingredient-concentrated formulations applied after toner and before moisturizer. Their thinner consistency allows deeper penetration. Moisturizer is then applied on top to seal in both moisture and the serum's actives."
-  },
-  {
-    q: "For post-inflammatory hyperpigmentation (PIH) on the chin, which ingredient combination is MOST effective?",
-    opts: [
-      "Sulfur and benzoyl peroxide",
-      "Retinoids, vitamin C, and broad-spectrum SPF",
-      "Hyaluronic acid and ceramides",
-      "Tea tree oil and salicylic acid"
-    ],
-    ans: 1,
-    exp: "Retinoids accelerate cell turnover, vitamin C inhibits tyrosinase and brightens pigmentation, and SPF prevents UV from darkening existing marks. This trio is the gold-standard approach for post-inflammatory hyperpigmentation management."
-  },
-
-  // ─── HAIR REMOVAL (15%) ──────────────────────────────────────────────────
-
-  {
-    q: "Which hair growth phase is MOST effective for laser or IPL hair removal?",
-    opts: [
-      "Telogen (resting phase)",
-      "Catagen (transitional phase)",
-      "Anagen (active growth phase)",
-      "Exogen (shedding phase)"
-    ],
-    ans: 2,
-    exp: "Laser and IPL are most effective during the anagen (active growth) phase because the hair shaft is fully connected to the melanin-rich dermal papilla. Multiple sessions are needed because not all follicles are in anagen simultaneously."
-  },
-  {
-    q: "The main active ingredients in chemical depilatories that break down hair are:",
-    opts: [
-      "Hydrogen peroxide",
-      "Calcium thioglycolate or sodium hydroxide (alkaline chemicals)",
-      "Lanthionine",
-      "Ammonium persulfate"
-    ],
-    ans: 1,
-    exp: "Chemical depilatories use alkaline chemicals — typically calcium thioglycolate, sodium hydroxide, or potassium hydroxide — to break the disulfide bonds in the hair's keratin structure, dissolving the hair at or slightly below the skin surface."
-  },
-  {
-    q: "The minimum hair length recommended for effective soft wax removal is:",
-    opts: [
-      "1 mm",
-      "1/4 inch (approximately 6mm)",
-      "1/2 inch (12mm)",
-      "1 inch (25mm)"
-    ],
-    ans: 1,
-    exp: "For soft wax to grip hair effectively, hair should be at least 1/4 inch (approximately 6mm) long. Shorter hair does not give the wax enough surface area to adhere. Sugaring can work on slightly shorter hair (1/16 to 1/8 inch)."
-  },
-  {
-    q: "Hard wax differs from soft wax primarily in that hard wax:",
-    opts: [
-      "Requires a muslin strip to remove",
-      "Must be applied over powder to prevent sticking to skin",
-      "Adheres to the hair rather than the skin and is removed without a strip",
-      "Requires a higher temperature than soft wax for all hair types"
-    ],
-    ans: 2,
-    exp: "Hard wax wraps around the hair shaft as it hardens and is removed by gripping and pulling the wax itself — no strip needed. This makes it gentler on sensitive areas (bikini, underarms, face). Soft wax adheres to both skin and hair and requires a strip."
-  },
-  {
-    q: "Which condition is an ABSOLUTE contraindication to waxing in the affected area?",
-    opts: [
-      "Ingrown hairs with no sign of infection",
-      "Active eczema with broken, weeping skin",
-      "Dry skin that was exfoliated 24 hours prior",
-      "Mild hyperpigmentation from previous waxing"
-    ],
-    ans: 1,
-    exp: "Active eczema with broken, weeping skin is an absolute contraindication: waxing causes severe trauma, greatly increases infection risk, and can spread the condition. Intact ingrown hairs, dry skin, and mild PIH are relative concerns, not absolute contraindications."
-  },
-  {
-    q: "A client using topical tretinoin on her upper lip requests a lip wax. The esthetician should:",
-    opts: [
-      "Proceed normally since it is a small area",
-      "Use hard wax only, as it is gentler",
-      "Decline to wax the tretinoin-treated area because the skin is thinned and may tear (skin lifting)",
-      "Apply hydrocortisone cream first to protect the skin"
-    ],
-    ans: 2,
-    exp: "Topical retinoids thin the stratum corneum, making skin highly fragile. Waxing retinoid-treated skin frequently causes 'skin lifting' — painful removal of the epidermis. Most protocols require stopping retinoid use 5–7 days before waxing the treated area."
-  },
-  {
-    q: "Which method of electrolysis utilizes alternating current to create heat that destroys the hair follicle?",
-    opts: [
-      "Galvanic electrolysis",
-      "Thermolysis (shortwave/diathermy)",
-      "Blend method",
-      "IPL (intense pulsed light)"
-    ],
-    ans: 1,
-    exp: "Thermolysis uses high-frequency alternating current to generate heat that destroys the follicle. Galvanic electrolysis uses direct current to create lye (sodium hydroxide) that chemically destroys the follicle. The blend method combines both. IPL uses light energy, not electrical current."
-  },
-  {
-    q: "The primary safety concern when performing laser hair removal on Fitzpatrick V–VI skin tones is:",
-    opts: [
-      "The laser will not penetrate deeply enough to reach the follicle",
-      "Competing epidermal melanin absorption can cause burns, scarring, or hypopigmentation",
-      "Darker skin is immune to laser effects due to melanin",
-      "These skin types have fewer hair follicles and will not respond to treatment"
-    ],
-    ans: 1,
-    exp: "In darker skin, epidermal melanin competes with follicular melanin for laser absorption, increasing the risk of burns, blistering, and hypopigmentation. Nd:YAG 1064nm lasers with longer wavelengths and pulse durations are preferred for Fitzpatrick V–VI skin."
-  },
-  {
-    q: "Traditional hand-applied sugar paste is removed in which direction relative to hair growth?",
-    opts: [
-      "In the direction of hair growth",
-      "Against the direction of hair growth",
-      "At a 90-degree angle to hair growth",
-      "Direction does not matter with sugaring"
-    ],
-    ans: 0,
-    exp: "Traditional hand-applied sugar paste is applied against hair growth and removed in the direction of hair growth — opposite to the soft wax technique. Removing in the direction of growth reduces breakage and follicle trauma and is gentler on the skin."
-  },
-  {
-    q: "Hirsutism is BEST defined as:",
-    opts: [
-      "Excessive hair growth in both men and women caused by genetics",
-      "Any unwanted hair growth regardless of location",
-      "Androgen-dependent excessive terminal hair growth in women in a male-pattern distribution",
-      "Excessive hair growth caused by medications or systemic illness"
-    ],
-    ans: 2,
-    exp: "Hirsutism is excessive growth of coarse terminal hair in women in androgen-dependent areas (chin, upper lip, chest, abdomen), most commonly caused by PCOS. Hypertrichosis is generalized excess hair growth from genetics or non-hormonal factors."
-  },
-  {
-    q: "Appropriate post-wax care recommendations include:",
-    opts: [
-      "Apply heavy moisturizer immediately and expose the area to sunlight",
-      "Apply soothing aloe vera or azulene products; avoid heat, sun, and tight clothing for 24 hours",
-      "Exfoliate the area immediately to prevent ingrown hairs",
-      "Re-wax in 48 hours to remove remaining hairs"
-    ],
-    ans: 1,
-    exp: "Mild redness and swelling are normal post-wax responses. Soothing products (aloe, azulene) calm the skin. Clients should avoid heat (hot showers, saunas), UV, tight clothing, and re-waxing for at least 24–48 hours to allow the skin to recover and prevent folliculitis."
-  },
-  {
-    q: "Threading is BEST described as:",
-    opts: [
-      "A method using fine metallic threads that cut hair at the surface",
-      "A temporary hair removal method using a twisted thread to trap and pull hairs from the follicle",
-      "A permanent hair removal technique using electrical current",
-      "A chemical method that dissolves hair at the surface"
-    ],
-    ans: 1,
-    exp: "Threading (also called banding) uses a twisted cotton thread rolled across the skin to catch and extract multiple hairs from the follicle. It is temporary, chemical-free, and best suited for eyebrows and fine facial hair."
-  },
-
-  // ─── EYELASH & EYEBROW SERVICES (6%) ─────────────────────────────────────
-
-  {
-    q: "Before applying lash or brow tint, what ESSENTIAL safety step must always be performed?",
-    opts: [
-      "A strand test to assess color uptake",
-      "A patch test 24–48 hours in advance to check for allergic sensitivity",
-      "A scalp assessment to evaluate hair health",
-      "A Fitzpatrick assessment to determine the appropriate tint shade"
-    ],
-    ans: 1,
-    exp: "Lash and brow tints contain oxidative dye chemicals that can cause severe allergic reactions, including anaphylaxis. A patch test applied 24–48 hours before service is mandatory. Sensitivity to dyes can develop at any time, even after years of previous use without reaction."
-  },
-  {
-    q: "A client scheduled for lash tinting is wearing soft contact lenses. What should the esthetician do?",
-    opts: [
-      "Proceed normally, as contacts protect the eyes from tint",
-      "Ask the client to remove contacts before the service, as tinting chemicals can damage them and leach into the eye",
-      "Apply tint only to the outer lashes to avoid the lens area",
-      "Use a weaker tint concentration to minimize risk"
-    ],
-    ans: 1,
-    exp: "Soft contact lenses are porous and can absorb tinting chemicals, which can then cause chemical injury to the eye. Clients must remove contacts before any lash or brow tinting service. Protective eye pads must also be used."
-  },
-  {
-    q: "When shaping eyebrows, the correct arch placement is determined by:",
-    opts: [
-      "Personal preference of the esthetician",
-      "A line drawn upward from the outer edge of the iris to determine the highest point of the arch",
-      "Measuring exactly 1 inch from the center of the brow",
-      "Placing the arch directly above the outer corner of the eye"
-    ],
-    ans: 1,
-    exp: "Classic brow mapping: the inner brow aligns with the outer nostril; the arch falls above the outer iris edge; the tail ends at a diagonal from the nostril through the outer corner of the eye. These are starting guidelines; brow shape is ultimately customized to the client's face."
-  },
-  {
-    q: "Which is a CONTRAINDICATION to lash extension application?",
-    opts: [
-      "Having naturally sparse lashes",
-      "Active conjunctivitis (pink eye) in one or both eyes",
-      "Having Fitzpatrick Type III skin",
-      "Wearing mascara daily"
-    ],
-    ans: 1,
-    exp: "Active conjunctivitis is a contraindication: the eye tissue is inflamed and compromised, and applying adhesive chemicals near an infected eye worsens the condition and risks spreading infection. Service must be declined until fully resolved."
-  },
-  {
-    q: "The PRIMARY chemical in eyelash extension adhesive that can cause allergic reactions is:",
-    opts: [
-      "Formaldehyde",
-      "Cyanoacrylate",
-      "Hydrogen peroxide",
-      "Para-phenylenediamine (PPD)"
-    ],
-    ans: 1,
-    exp: "Cyanoacrylate is the main bonding agent in lash extension adhesives. It can cause allergic contact reactions — particularly to the eyelids and surrounding skin. Sensitivity can develop over time even in clients who have had extensions without previous reaction."
-  },
-  {
-    q: "For a client with very sparse, patchy eyebrows, the BEST approach is to:",
-    opts: [
-      "Aggressively wax the shape and rely on regrowth to create fullness",
-      "Remove all visible stray hairs and tint to make fine existing hairs more visible",
-      "Apply chemical depilation to the entire brow and redraw with a pencil",
-      "Wax only the areas where regrowth is strong and ignore sparse areas"
-    ],
-    ans: 1,
-    exp: "For sparse brows, preserving all possible hair is the priority. Tinting can make fine, light hairs more visible for a fuller appearance. Over-removing hairs from already sparse brows worsens the condition. Brow makeup and growth-supporting serums complement the service."
-  },
-
-  // ─── ADVANCED TREATMENTS (3%) ────────────────────────────────────────────
-
-  {
-    q: "A glycolic acid peel at 30% concentration and pH 3.0 is considered which peel depth?",
-    opts: [
-      "Superficial — appropriate for licensed esthetician administration",
-      "Medium-depth — requires physician supervision",
-      "Deep — equivalent to phenol concentration",
-      "An enzyme peel — has no acid activity"
-    ],
-    ans: 0,
-    exp: "Superficial peels work within the epidermis and uppermost dermis. Glycolic acid at concentrations up to 30–35% at pH 3.0 is within the superficial category and may be performed by licensed estheticians in California. Medium-depth peels (TCA 35–50%) and deep peels (phenol) require physician supervision."
-  },
-  {
-    q: "Microdermabrasion is BEST described as:",
-    opts: [
-      "A chemical exfoliation using TCA crystals",
-      "A mechanical exfoliation that removes the outermost stratum corneum using abrasive crystals or a diamond tip",
-      "A light-based therapy targeting dermal collagen",
-      "A technique using electric current to stimulate muscle contractions"
-    ],
-    ans: 1,
-    exp: "Microdermabrasion uses a mechanical abrasion system — either aluminum oxide crystals or a diamond-tipped wand — to physically remove the superficial stratum corneum. It improves texture, mild scarring, and hyperpigmentation. It is contraindicated in active rosacea, open wounds, and active acne lesions."
-  },
-  {
-    q: "LED therapy using BLUE light (approximately 415nm) is primarily used to treat:",
-    opts: [
-      "Deep wrinkles and collagen loss",
-      "Hyperpigmentation and melasma",
-      "Acne vulgaris by targeting Propionibacterium acnes bacteria",
-      "Rosacea by reducing vascular inflammation"
-    ],
-    ans: 2,
-    exp: "Blue LED light (~415nm) activates porphyrins produced by P. acnes, generating oxygen free radicals that destroy the bacteria. It is an effective, non-invasive tool for mild to moderate acne. Red LED (~630nm) stimulates fibroblasts for anti-aging; near-infrared penetrates deeper for inflammation."
-  },
-// ─── SAFETY & INFECTION CONTROL — additional questions ───────────────────
-
-  {
+{
     q: "Which of the following items is considered a SINGLE-USE (disposable) item in the esthetician service room?",
     opts: [
       "Metal tweezers",
@@ -1266,11 +680,211 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "OSHA's Bloodborne Pathogens Standard (29 CFR 1910.1030) requires employers to provide BBP training at the time of initial assignment (before beginning tasks involving occupational exposure) and at least annually. This covers hazard communication, exposure control plan review, PPE use, post-exposure procedure, and hepatitis B vaccination. For estheticians, occupational exposure risk arises during extractions, waxing, and any service that might involve skin trauma."
+  }
+  ],
+
+  // sa
+  sa: [
+{
+    q: "A client with Fitzpatrick Type IV skin seeks laser hair removal. Which concern is MOST clinically relevant?",
+    opts: [
+      "Type IV skin does not respond to laser and should not receive it",
+      "Type IV skin has increased melanin and is at higher risk for post-inflammatory hyperpigmentation and burns from laser",
+      "Type IV skin requires twice the laser energy compared to Type I",
+      "Fitzpatrick type has no relevance to laser hair removal outcomes"
+    ],
+    ans: 1,
+    exp: "Fitzpatrick Type IV skin tans easily and has higher melanin concentration, which can absorb laser energy unintentionally, increasing the risk of PIH, burns, and other complications. Careful selection of wavelength, pulse duration, and fluence is required."
+  },
+  {
+    q: "Intrinsic aging of the skin is PRIMARILY caused by:",
+    opts: [
+      "Repeated UV exposure over decades",
+      "Cigarette smoking and environmental pollutants",
+      "Chronological aging, genetics, and hormonal changes",
+      "Repeated facial expressions causing permanent lines"
+    ],
+    ans: 2,
+    exp: "Intrinsic (chronological) aging is driven by internal factors: genetics, hormonal decline, cellular metabolism changes, and the natural slowing of collagen and elastin production. UV damage, smoking, and lifestyle factors contribute to extrinsic (premature) aging."
+  },
+  {
+    q: "A client's skin is oily in the T-zone but dry and flaky on the cheeks. This BEST describes:",
+    opts: [
+      "Oily skin type",
+      "Dehydrated skin condition",
+      "Combination skin type",
+      "Sensitized skin condition"
+    ],
+    ans: 2,
+    exp: "Combination skin is a genetic skin TYPE characterized by oiliness in the T-zone (forehead, nose, chin) with dryness elsewhere. It is distinct from dehydration (insufficient water content) or sensitized skin (reactive to stimuli)."
+  },
+  {
+    q: "During skin analysis under magnification, you observe multiple yellowish dome-shaped papules with a central pore on a middle-aged client's cheeks. This MOST likely represents:",
+    opts: [
+      "Closed comedones (milia)",
+      "Sebaceous hyperplasia",
+      "Basal cell carcinoma",
+      "Grade II acne"
+    ],
+    ans: 1,
+    exp: "Sebaceous hyperplasia presents as yellowish, donut-shaped or dome-shaped papules with a central indentation (pore), most common in middle-aged to older adults with oily skin. They are benign enlarged oil glands and outside the esthetician's scope of treatment."
+  },
+  {
+    q: "Which factor would MOST significantly affect the outcome of a superficial chemical peel?",
+    opts: [
+      "The client's eye color",
+      "Current use of topical retinoids at home",
+      "The client's preference for fragrance-free products",
+      "The ambient humidity in the treatment room"
+    ],
+    ans: 1,
+    exp: "Topical retinoids (retinol, tretinoin) thin the stratum corneum and increase skin sensitivity. Current or recent use can cause over-exfoliation, burns, or prolonged recovery from a chemical peel. This must always be disclosed during consultation."
+  },
+  {
+    q: "A client complains her skin has become 'suddenly sensitive' to products she has used for years. What factor is MOST commonly responsible?",
+    opts: [
+      "A change in natural skin type from dry to oily",
+      "Barrier function disruption from over-exfoliation or harsh products",
+      "An increase in melanocyte activity",
+      "Reduced sebum production with age"
+    ],
+    ans: 1,
+    exp: "Acquired (sensitized) skin most commonly results from barrier function disruption caused by over-exfoliation, harsh ingredients, or inappropriate products. A compromised barrier allows irritants to penetrate and triggers reactivity."
+  },
+  {
+    q: "When analyzing a client with Fitzpatrick Type VI skin, the treatment concern of GREATEST importance is:",
+    opts: [
+      "The client will not respond to chemical exfoliants",
+      "The client is highly prone to sunburn and UV damage",
+      "The client is at increased risk of post-inflammatory hyperpigmentation from any inflammatory trigger",
+      "The client's skin cannot tolerate hyaluronic acid-based serums"
+    ],
+    ans: 2,
+    exp: "Fitzpatrick Types V and VI have highly active melanocytes that respond aggressively to inflammation. Any irritating, traumatic, or inflammatory procedure (waxing, aggressive peels, extractions) can trigger PIH, making conservative, gentle approaches essential."
+  },
+  {
+    q: "A client who is three months pregnant inquires about services. Which presents the GREATEST contraindications?",
+    opts: [
+      "Gentle cleansing facials and hydrating masks",
+      "Strong chemical peels, essential oil aromatherapy, and electrical modalities",
+      "Brow shaping and tinting",
+      "Applying mineral SPF sunscreen"
+    ],
+    ans: 1,
+    exp: "During pregnancy, high-percentage chemical peels risk systemic absorption; many essential oils are contraindicated; electrical modalities (galvanic, high-frequency) may pose risks to the fetus. Gentle, fragrance-free, non-invasive services are recommended; consult physician for specifics."
+  },
+  {
+    q: "What BEST distinguishes a skin 'type' from a skin 'condition'?",
+    opts: [
+      "Skin type is temporary and changes seasonally; skin conditions are permanent",
+      "Skin type is genetically determined and relatively fixed; skin conditions are influenced by internal/external factors and are changeable",
+      "Skin type is determined by products used; skin conditions are genetic",
+      "There is no meaningful clinical distinction between the two"
+    ],
+    ans: 1,
+    exp: "Skin TYPE is genetically determined and describes the inherent oil-producing tendency (normal, dry, oily, combination). Skin CONDITIONS (dehydration, hyperpigmentation, acne, sensitization) are influenced by environmental, hormonal, and lifestyle factors and can be changed with proper treatment."
+  },
+  {
+    q: "A client presents with symmetrical brownish discoloration on both cheeks that worsened during pregnancy. The esthetician should suspect:",
+    opts: [
+      "Melasma (chloasma)",
+      "Tinea versicolor",
+      "Seborrheic keratosis",
+      "Vitiligo"
+    ],
+    ans: 0,
+    exp: "Melasma (chloasma) is a hormonally triggered hyperpigmentation disorder that appears symmetrically on the cheeks, forehead, and upper lip. It is strongly associated with pregnancy ('mask of pregnancy'), oral contraceptives, and UV exposure. Referral for physician diagnosis is appropriate."
+  },
+  {
+    q: "You notice a suspicious lesion on a client's cheek — irregular shape, multi-colored, approximately 7mm in diameter. You should:",
+    opts: [
+      "Perform the facial normally but document the mole's appearance",
+      "Apply an enzyme mask and monitor for changes at the next appointment",
+      "Inform the client of your observation, avoid treatment on the lesion, and strongly recommend evaluation by a dermatologist",
+      "Photograph the lesion for your records and continue service as planned"
+    ],
+    ans: 2,
+    exp: "Any lesion meeting ABCDE criteria (asymmetry, irregular border, multiple colors, diameter >6mm, evolving) must be referred to a dermatologist. Estheticians cannot diagnose skin disease. Documenting concern, avoiding the lesion, and making a referral protects both client and professional."
+  },
+  {
+    q: "A new client has very fair skin, freckles, and always burns with sun exposure but never tans. She would be classified as Fitzpatrick:",
+    opts: [
+      "Type I — Always burns, never tans",
+      "Type II — Burns easily, tans minimally",
+      "Type III — Tans well, moderate burn",
+      "Type IV — Burns minimally, tans easily"
+    ],
+    ans: 0,
+    exp: "Fitzpatrick Type I is characterized by very fair skin, freckling, always burning, and inability to tan. It has the lowest level of melanin protection and is most susceptible to UV damage and skin cancers."
+  },
+  {
+    q: "A client uses a nightly retinol serum and glycolic acid scrub at home. For a professional facial, the esthetician should MOST likely:",
+    opts: [
+      "Perform a medium-depth chemical peel to complement her home routine",
+      "Perform only gentle, non-exfoliating treatments as her skin barrier may already be stressed",
+      "Skip cleansing since the client's skin is already clean",
+      "Recommend discontinuing all home care for two weeks before each facial"
+    ],
+    ans: 1,
+    exp: "Combining professional chemical exfoliation with aggressive home retinol/AHA use risks over-exfoliation and barrier disruption. The esthetician should assess the skin condition, choose gentle modalities, and educate the client on balancing home and professional treatments."
+  },
+  {
+    q: "Which condition is CORRECTLY identified as a contraindication to any exfoliating service?",
+    opts: [
+      "Mild comedonal acne with no active inflammation",
+      "Active rosacea with pustules and significant erythema",
+      "Post-acne hyperpigmentation without active lesions",
+      "Slightly dehydrated skin with surface tightness"
+    ],
+    ans: 1,
+    exp: "Active rosacea with pustules represents an inflamed, reactive state. Exfoliation (mechanical or chemical) would further irritate the vascular and sensitive skin, potentially causing significant flaring. Post-acne marks, mild comedones, and dehydration may benefit from appropriate gentle exfoliation."
+  },
+  {
+    q: "The PRIMARY treatment goal for sensitized skin is to:",
+    opts: [
+      "Deep exfoliate to remove dead cells causing sensitivity",
+      "Strengthen and restore the skin's barrier function through calming, supportive treatments",
+      "Reduce sebum production with astringent-based products",
+      "Use high-frequency current to increase blood circulation"
+    ],
+    ans: 1,
+    exp: "Sensitized skin has a compromised barrier. The primary treatment goal is to repair and restore barrier function using gentle, fragrance-free, calming formulations — such as ceramides, niacinamide, and soothing botanicals — while avoiding further irritation."
+  },
+  {
+    q: "During consultation, which finding would MOST indicate a physician referral rather than proceeding with a facial treatment?",
+    opts: [
+      "Comedones on the nose and forehead",
+      "Mild hyperpigmentation on the cheeks",
+      "A rapidly growing, crusting, and bleeding lesion on the face",
+      "Dry patches on the cheeks"
+    ],
+    ans: 2,
+    exp: "A rapidly growing, crusting, or bleeding lesion is a red flag for potential skin cancer. This falls outside the esthetician's scope of practice — a medical referral is mandatory. Comedones and mild hyperpigmentation can be addressed in the esthetics setting."
+  },
+  {
+    q: "A client has oily skin but reports skin 'feels tight and dry' after cleansing. This discrepancy is MOST likely caused by:",
+    opts: [
+      "Normal oily skin characteristics",
+      "Use of an overly stripping cleanser that removes surface lipids and disrupts the acid mantle",
+      "High water content causing the oily sheen",
+      "An allergic reaction to her current moisturizer"
+    ],
+    ans: 1,
+    exp: "Oily skin can become dehydrated when harsh cleansers strip the lipid layer, triggering more oil production as compensation. 'Oily but tight' after cleansing is a classic sign of a disrupted acid mantle. A balanced, non-stripping cleanser is indicated."
+  },
+  {
+    q: "The Fitzpatrick scale is PRIMARILY used by estheticians to assess:",
+    opts: [
+      "Acne severity",
+      "Risk of inflammatory skin disease",
+      "The skin's response to UV exposure — specifically tendency to burn versus tan",
+      "The client's appropriate product pH tolerance"
+    ],
+    ans: 2,
+    exp: "The Fitzpatrick scale classifies skin types (I–VI) based on the skin's response to UV exposure. It is an essential tool for selecting appropriate laser settings, peel depths, and UV protection recommendations."
   },
 
-  // ─── CLIENT CONSULTATION & SKIN ANALYSIS — additional questions ───────────
-
-  {
+{
     q: "A Fitzpatrick Type IV client is requesting her first chemical peel. The most important risk to discuss is:",
     opts: [
       "The peel will have no effect because darker skin is too thick",
@@ -1368,11 +982,190 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "The magnifying lamp (usually 5-diopter, with a fluorescent or LED ring light) magnifies the skin surface 5× for detailed visual analysis. It reveals comedone type (open vs. closed), milia, skin texture, vascular irregularities, hyperpigmentation patterns, and follicle size. This analysis directly informs product selection, extraction technique, and treatment modalities. UV/Wood's lamps are a separate tool for fluorescent assessment."
+  }
+  ],
+
+  // sc
+  sc: [
+{
+    q: "Which is the CORRECT order of steps in a standard professional facial?",
+    opts: [
+      "Cleanse → Steam → Mask → Massage → Exfoliate → Tone → Moisturize",
+      "Consultation → Cleanse → Analyze → Exfoliate → Steam → Extractions → Massage → Mask → Tone → Moisturize → SPF",
+      "Steam → Cleanse → Mask → Exfoliate → Massage → Tone → Moisturize",
+      "Cleanse → Exfoliate → Mask → Steam → Extractions → Massage → Tone → Moisturize"
+    ],
+    ans: 1,
+    exp: "The standard facial sequence: consult, cleanse, analyze under magnification, exfoliate to prep, steam/warm towels to soften follicles, extractions if needed, massage for circulation, mask for specific concerns, tone, moisturize, SPF. Each step builds on the last for optimal results."
+  },
+  {
+    q: "AHAs (alpha-hydroxy acids) such as glycolic acid work primarily by:",
+    opts: [
+      "Physically scrubbing dead cells from the skin's surface",
+      "Decreasing sebum production in the follicle",
+      "Loosening the bonds between corneocytes in the stratum corneum to promote chemical exfoliation",
+      "Penetrating the dermis to stimulate fibroblast collagen production"
+    ],
+    ans: 2,
+    exp: "AHAs are water-soluble chemical exfoliants that break down the cohesive forces (desmosomes) between dead skin cells (corneocytes) in the stratum corneum. They do not physically scrub skin. They also increase surface hydration by improving NMF levels."
+  },
+  {
+    q: "Salicylic acid (BHA) has a therapeutic advantage over glycolic acid (AHA) for acne-prone skin because:",
+    opts: [
+      "BHA is stronger and more irritating, producing faster results",
+      "BHA is oil-soluble and can penetrate the sebaceous follicle to exfoliate inside the pore",
+      "BHA increases melanin production to reduce acne scarring",
+      "BHA requires a lower pH than AHAs to achieve similar results"
+    ],
+    ans: 1,
+    exp: "Salicylic acid is lipid (oil)-soluble, which allows it to penetrate into the oil-filled sebaceous follicle and exfoliate the follicle lining from the inside. This makes it especially effective for comedonal and acne-prone skin. AHAs are water-soluble and work primarily on the surface."
+  },
+  {
+    q: "A client with very dry, mature skin asks about mask options. Which mask type would MOST benefit this client?",
+    opts: [
+      "Sulfur mask to control sebum",
+      "Clay (kaolin) mask to absorb excess oil",
+      "Cream or hydrogel mask rich in humectants and emollients",
+      "Charcoal detox mask to clear impurities"
+    ],
+    ans: 2,
+    exp: "Dry, mature skin lacks lipids and moisture. Cream or hydrogel masks with humectants (hyaluronic acid, glycerin) and emollients provide moisture and lipid replenishment. Clay and charcoal masks are absorptive and best for oily skin. Sulfur is used primarily for acne."
+  },
+  {
+    q: "In facial massage, effleurage is PRIMARILY used to:",
+    opts: [
+      "Break up subcutaneous fat deposits",
+      "Apply deep pressure to stimulate deep nerves",
+      "Begin and end massage sequences with light, soothing gliding strokes",
+      "Create friction-induced erythema to boost circulation"
+    ],
+    ans: 2,
+    exp: "Effleurage consists of long, gentle, gliding strokes that introduce the massage, relax the client, improve lymphatic flow, and serve as transitional and closing movements. Petrissage provides kneading; tapotement involves percussive movements; friction provides deep circular pressure."
+  },
+  {
+    q: "High-frequency current in esthetic treatments is used primarily to:",
+    opts: [
+      "Reduce melanin production in hyperpigmented areas",
+      "Generate a germicidal ozone effect and heat to help treat acne-prone skin",
+      "Deeply stimulate fibroblasts to produce new collagen in the dermis",
+      "Perform iontophoresis to drive water-soluble products deeper"
+    ],
+    ans: 1,
+    exp: "High-frequency machines produce alternating current that generates heat and ozone (with violet/neon electrode) with a germicidal effect, making them effective for acne-prone skin. It is NOT used for deep collagen stimulation or iontophoresis."
+  },
+  {
+    q: "Kojic acid is classified as which type of skin care ingredient?",
+    opts: [
+      "Humectant",
+      "Emollient",
+      "Tyrosinase inhibitor (skin brightening/depigmentation agent)",
+      "AHA chemical exfoliant"
+    ],
+    ans: 2,
+    exp: "Kojic acid is a natural compound derived from fungi that inhibits tyrosinase, the enzyme responsible for melanin synthesis. It is used to treat hyperpigmentation, melasma, and uneven skin tone. It is not a humectant, emollient, or exfoliant."
+  },
+  {
+    q: "Which of the following is a physical (mineral) sunscreen active?",
+    opts: [
+      "Octinoxate",
+      "Avobenzone",
+      "Zinc oxide",
+      "Homosalate"
+    ],
+    ans: 2,
+    exp: "Zinc oxide (and titanium dioxide) are physical sunscreen actives that reflect and scatter UV radiation. Octinoxate, avobenzone, and homosalate are chemical UV filters that absorb UV energy and convert it to heat. Physical sunscreens are often preferred for sensitive and post-procedure skin."
+  },
+  {
+    q: "Post-cleanse tightness and discomfort are MOST likely caused by:",
+    opts: [
+      "Normal characteristics of healthy skin",
+      "The cleanser disrupting the skin's acid mantle and stripping surface lipids",
+      "Excess dead skin cells blocking product absorption",
+      "Systemic dehydration from insufficient water intake that day"
+    ],
+    ans: 1,
+    exp: "Tightness after cleansing typically indicates the cleanser was too alkaline or harsh, stripping the skin's natural oils and disrupting the acid mantle (pH ~4.5–5.5). A gentle, pH-balanced cleanser is the solution."
+  },
+  {
+    q: "The SAFEST exfoliating option for a client with active Stage 2 rosacea (papules and pustules) is:",
+    opts: [
+      "Glycolic acid 20% chemical peel",
+      "Physical microdermabrasion",
+      "A gentle enzyme exfoliant (papaya or pineapple) at low concentration",
+      "Salicylic acid 30% chemical peel"
+    ],
+    ans: 2,
+    exp: "Active rosacea with pustules requires the most minimal approach. Gentle enzyme exfoliants at low concentration generate minimal heat and inflammation. High-percentage acid peels and abrasive microdermabrasion are contraindicated during active rosacea flares."
+  },
+  {
+    q: "Toner is applied in a facial treatment primarily to:",
+    opts: [
+      "Add heavy moisturizing lipids back to the skin",
+      "Remove remaining cleanser residue, restore pH balance, and prepare the skin for subsequent products",
+      "Disinfect the skin before treatment",
+      "Create an occlusive protective barrier before massage"
+    ],
+    ans: 1,
+    exp: "Toner removes remaining cleanser residue, helps restore the skin's natural acid mantle pH (~4.5–5.5), and primes the skin to absorb serums and treatments more effectively. Modern toners also deliver hydrating or calming ingredients."
+  },
+  {
+    q: "A serum is applied in the facial sequence:",
+    opts: [
+      "Before cleansing to protect the skin",
+      "After toner and before moisturizer, as the thinnest-consistency treatment product",
+      "After moisturizer to seal active ingredients into the skin",
+      "After the mask and before toner"
+    ],
+    ans: 1,
+    exp: "Serums are low-molecular-weight, active-ingredient-concentrated formulations applied after toner and before moisturizer. Their thinner consistency allows deeper penetration. Moisturizer is then applied on top to seal in both moisture and the serum's actives."
+  },
+  {
+    q: "For post-inflammatory hyperpigmentation (PIH) on the chin, which ingredient combination is MOST effective?",
+    opts: [
+      "Sulfur and benzoyl peroxide",
+      "Retinoids, vitamin C, and broad-spectrum SPF",
+      "Hyaluronic acid and ceramides",
+      "Tea tree oil and salicylic acid"
+    ],
+    ans: 1,
+    exp: "Retinoids accelerate cell turnover, vitamin C inhibits tyrosinase and brightens pigmentation, and SPF prevents UV from darkening existing marks. This trio is the gold-standard approach for post-inflammatory hyperpigmentation management."
   },
 
-  // ─── SKIN CARE TREATMENTS — additional questions ─────────────────────────
-
+{
+    q: "A glycolic acid peel at 30% concentration and pH 3.0 is considered which peel depth?",
+    opts: [
+      "Superficial — appropriate for licensed esthetician administration",
+      "Medium-depth — requires physician supervision",
+      "Deep — equivalent to phenol concentration",
+      "An enzyme peel — has no acid activity"
+    ],
+    ans: 0,
+    exp: "Superficial peels work within the epidermis and uppermost dermis. Glycolic acid at concentrations up to 30–35% at pH 3.0 is within the superficial category and may be performed by licensed estheticians in California. Medium-depth peels (TCA 35–50%) and deep peels (phenol) require physician supervision."
+  },
   {
+    q: "Microdermabrasion is BEST described as:",
+    opts: [
+      "A chemical exfoliation using TCA crystals",
+      "A mechanical exfoliation that removes the outermost stratum corneum using abrasive crystals or a diamond tip",
+      "A light-based therapy targeting dermal collagen",
+      "A technique using electric current to stimulate muscle contractions"
+    ],
+    ans: 1,
+    exp: "Microdermabrasion uses a mechanical abrasion system — either aluminum oxide crystals or a diamond-tipped wand — to physically remove the superficial stratum corneum. It improves texture, mild scarring, and hyperpigmentation. It is contraindicated in active rosacea, open wounds, and active acne lesions."
+  },
+  {
+    q: "LED therapy using BLUE light (approximately 415nm) is primarily used to treat:",
+    opts: [
+      "Deep wrinkles and collagen loss",
+      "Hyperpigmentation and melasma",
+      "Acne vulgaris by targeting Propionibacterium acnes bacteria",
+      "Rosacea by reducing vascular inflammation"
+    ],
+    ans: 2,
+    exp: "Blue LED light (~415nm) activates porphyrins produced by P. acnes, generating oxygen free radicals that destroy the bacteria. It is an effective, non-invasive tool for mild to moderate acne. Red LED (~630nm) stimulates fibroblasts for anti-aging; near-infrared penetrates deeper for inflammation."
+  },
+
+{
     q: "AHA (alpha-hydroxy acid) exfoliants such as glycolic and lactic acid work primarily by:",
     opts: [
       "Physically scrubbing the stratum corneum with abrasive particles",
@@ -1503,11 +1296,145 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Enzyme exfoliants use proteolytic (protein-digesting) enzymes that selectively digest the keratin in dead skin cells without affecting living tissue. This makes them gentler than acid peels and appropriate for sensitive skin, rosacea-prone skin, and clients who cannot tolerate acid exfoliation. Papain (papaya) and bromelain (pineapple) are the most commonly used. Processing time, heat, and moisture activate enzymatic activity — hence enzyme masks are often applied with steam."
+  }
+  ],
+
+  // hr
+  hr: [
+{
+    q: "Which hair growth phase is MOST effective for laser or IPL hair removal?",
+    opts: [
+      "Telogen (resting phase)",
+      "Catagen (transitional phase)",
+      "Anagen (active growth phase)",
+      "Exogen (shedding phase)"
+    ],
+    ans: 2,
+    exp: "Laser and IPL are most effective during the anagen (active growth) phase because the hair shaft is fully connected to the melanin-rich dermal papilla. Multiple sessions are needed because not all follicles are in anagen simultaneously."
+  },
+  {
+    q: "The main active ingredients in chemical depilatories that break down hair are:",
+    opts: [
+      "Hydrogen peroxide",
+      "Calcium thioglycolate or sodium hydroxide (alkaline chemicals)",
+      "Lanthionine",
+      "Ammonium persulfate"
+    ],
+    ans: 1,
+    exp: "Chemical depilatories use alkaline chemicals — typically calcium thioglycolate, sodium hydroxide, or potassium hydroxide — to break the disulfide bonds in the hair's keratin structure, dissolving the hair at or slightly below the skin surface."
+  },
+  {
+    q: "The minimum hair length recommended for effective soft wax removal is:",
+    opts: [
+      "1 mm",
+      "1/4 inch (approximately 6mm)",
+      "1/2 inch (12mm)",
+      "1 inch (25mm)"
+    ],
+    ans: 1,
+    exp: "For soft wax to grip hair effectively, hair should be at least 1/4 inch (approximately 6mm) long. Shorter hair does not give the wax enough surface area to adhere. Sugaring can work on slightly shorter hair (1/16 to 1/8 inch)."
+  },
+  {
+    q: "Hard wax differs from soft wax primarily in that hard wax:",
+    opts: [
+      "Requires a muslin strip to remove",
+      "Must be applied over powder to prevent sticking to skin",
+      "Adheres to the hair rather than the skin and is removed without a strip",
+      "Requires a higher temperature than soft wax for all hair types"
+    ],
+    ans: 2,
+    exp: "Hard wax wraps around the hair shaft as it hardens and is removed by gripping and pulling the wax itself — no strip needed. This makes it gentler on sensitive areas (bikini, underarms, face). Soft wax adheres to both skin and hair and requires a strip."
+  },
+  {
+    q: "Which condition is an ABSOLUTE contraindication to waxing in the affected area?",
+    opts: [
+      "Ingrown hairs with no sign of infection",
+      "Active eczema with broken, weeping skin",
+      "Dry skin that was exfoliated 24 hours prior",
+      "Mild hyperpigmentation from previous waxing"
+    ],
+    ans: 1,
+    exp: "Active eczema with broken, weeping skin is an absolute contraindication: waxing causes severe trauma, greatly increases infection risk, and can spread the condition. Intact ingrown hairs, dry skin, and mild PIH are relative concerns, not absolute contraindications."
+  },
+  {
+    q: "A client using topical tretinoin on her upper lip requests a lip wax. The esthetician should:",
+    opts: [
+      "Proceed normally since it is a small area",
+      "Use hard wax only, as it is gentler",
+      "Decline to wax the tretinoin-treated area because the skin is thinned and may tear (skin lifting)",
+      "Apply hydrocortisone cream first to protect the skin"
+    ],
+    ans: 2,
+    exp: "Topical retinoids thin the stratum corneum, making skin highly fragile. Waxing retinoid-treated skin frequently causes 'skin lifting' — painful removal of the epidermis. Most protocols require stopping retinoid use 5–7 days before waxing the treated area."
+  },
+  {
+    q: "Which method of electrolysis utilizes alternating current to create heat that destroys the hair follicle?",
+    opts: [
+      "Galvanic electrolysis",
+      "Thermolysis (shortwave/diathermy)",
+      "Blend method",
+      "IPL (intense pulsed light)"
+    ],
+    ans: 1,
+    exp: "Thermolysis uses high-frequency alternating current to generate heat that destroys the follicle. Galvanic electrolysis uses direct current to create lye (sodium hydroxide) that chemically destroys the follicle. The blend method combines both. IPL uses light energy, not electrical current."
+  },
+  {
+    q: "The primary safety concern when performing laser hair removal on Fitzpatrick V–VI skin tones is:",
+    opts: [
+      "The laser will not penetrate deeply enough to reach the follicle",
+      "Competing epidermal melanin absorption can cause burns, scarring, or hypopigmentation",
+      "Darker skin is immune to laser effects due to melanin",
+      "These skin types have fewer hair follicles and will not respond to treatment"
+    ],
+    ans: 1,
+    exp: "In darker skin, epidermal melanin competes with follicular melanin for laser absorption, increasing the risk of burns, blistering, and hypopigmentation. Nd:YAG 1064nm lasers with longer wavelengths and pulse durations are preferred for Fitzpatrick V–VI skin."
+  },
+  {
+    q: "Traditional hand-applied sugar paste is removed in which direction relative to hair growth?",
+    opts: [
+      "In the direction of hair growth",
+      "Against the direction of hair growth",
+      "At a 90-degree angle to hair growth",
+      "Direction does not matter with sugaring"
+    ],
+    ans: 0,
+    exp: "Traditional hand-applied sugar paste is applied against hair growth and removed in the direction of hair growth — opposite to the soft wax technique. Removing in the direction of growth reduces breakage and follicle trauma and is gentler on the skin."
+  },
+  {
+    q: "Hirsutism is BEST defined as:",
+    opts: [
+      "Excessive hair growth in both men and women caused by genetics",
+      "Any unwanted hair growth regardless of location",
+      "Androgen-dependent excessive terminal hair growth in women in a male-pattern distribution",
+      "Excessive hair growth caused by medications or systemic illness"
+    ],
+    ans: 2,
+    exp: "Hirsutism is excessive growth of coarse terminal hair in women in androgen-dependent areas (chin, upper lip, chest, abdomen), most commonly caused by PCOS. Hypertrichosis is generalized excess hair growth from genetics or non-hormonal factors."
+  },
+  {
+    q: "Appropriate post-wax care recommendations include:",
+    opts: [
+      "Apply heavy moisturizer immediately and expose the area to sunlight",
+      "Apply soothing aloe vera or azulene products; avoid heat, sun, and tight clothing for 24 hours",
+      "Exfoliate the area immediately to prevent ingrown hairs",
+      "Re-wax in 48 hours to remove remaining hairs"
+    ],
+    ans: 1,
+    exp: "Mild redness and swelling are normal post-wax responses. Soothing products (aloe, azulene) calm the skin. Clients should avoid heat (hot showers, saunas), UV, tight clothing, and re-waxing for at least 24–48 hours to allow the skin to recover and prevent folliculitis."
+  },
+  {
+    q: "Threading is BEST described as:",
+    opts: [
+      "A method using fine metallic threads that cut hair at the surface",
+      "A temporary hair removal method using a twisted thread to trap and pull hairs from the follicle",
+      "A permanent hair removal technique using electrical current",
+      "A chemical method that dissolves hair at the surface"
+    ],
+    ans: 1,
+    exp: "Threading (also called banding) uses a twisted cotton thread rolled across the skin to catch and extract multiple hairs from the follicle. It is temporary, chemical-free, and best suited for eyebrows and fine facial hair."
   },
 
-  // ─── HAIR REMOVAL — additional questions ─────────────────────────────────
-
-  {
+{
     q: "Threading (khite) as a hair removal technique differs from waxing because:",
     opts: [
       "Threading uses chemicals to dissolve hair at the follicle",
@@ -1605,11 +1532,79 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "After waxing, the follicle is open and the skin is temporarily sensitized. Heat exposure (sun, hot tubs, heavy exercise) in the first 24–48 hours can cause folliculitis, increased redness, hyperpigmentation, or sweating-induced bacterial infection. Tight clothing can cause friction and folliculitis. Exfoliation should wait 48–72 hours post-wax. SPF should be applied if the area will be sun-exposed, but it is not done immediately post-wax before the skin settles."
+  }
+  ],
+
+  // ee
+  ee: [
+{
+    q: "Before applying lash or brow tint, what ESSENTIAL safety step must always be performed?",
+    opts: [
+      "A strand test to assess color uptake",
+      "A patch test 24–48 hours in advance to check for allergic sensitivity",
+      "A scalp assessment to evaluate hair health",
+      "A Fitzpatrick assessment to determine the appropriate tint shade"
+    ],
+    ans: 1,
+    exp: "Lash and brow tints contain oxidative dye chemicals that can cause severe allergic reactions, including anaphylaxis. A patch test applied 24–48 hours before service is mandatory. Sensitivity to dyes can develop at any time, even after years of previous use without reaction."
+  },
+  {
+    q: "A client scheduled for lash tinting is wearing soft contact lenses. What should the esthetician do?",
+    opts: [
+      "Proceed normally, as contacts protect the eyes from tint",
+      "Ask the client to remove contacts before the service, as tinting chemicals can damage them and leach into the eye",
+      "Apply tint only to the outer lashes to avoid the lens area",
+      "Use a weaker tint concentration to minimize risk"
+    ],
+    ans: 1,
+    exp: "Soft contact lenses are porous and can absorb tinting chemicals, which can then cause chemical injury to the eye. Clients must remove contacts before any lash or brow tinting service. Protective eye pads must also be used."
+  },
+  {
+    q: "When shaping eyebrows, the correct arch placement is determined by:",
+    opts: [
+      "Personal preference of the esthetician",
+      "A line drawn upward from the outer edge of the iris to determine the highest point of the arch",
+      "Measuring exactly 1 inch from the center of the brow",
+      "Placing the arch directly above the outer corner of the eye"
+    ],
+    ans: 1,
+    exp: "Classic brow mapping: the inner brow aligns with the outer nostril; the arch falls above the outer iris edge; the tail ends at a diagonal from the nostril through the outer corner of the eye. These are starting guidelines; brow shape is ultimately customized to the client's face."
+  },
+  {
+    q: "Which is a CONTRAINDICATION to lash extension application?",
+    opts: [
+      "Having naturally sparse lashes",
+      "Active conjunctivitis (pink eye) in one or both eyes",
+      "Having Fitzpatrick Type III skin",
+      "Wearing mascara daily"
+    ],
+    ans: 1,
+    exp: "Active conjunctivitis is a contraindication: the eye tissue is inflamed and compromised, and applying adhesive chemicals near an infected eye worsens the condition and risks spreading infection. Service must be declined until fully resolved."
+  },
+  {
+    q: "The PRIMARY chemical in eyelash extension adhesive that can cause allergic reactions is:",
+    opts: [
+      "Formaldehyde",
+      "Cyanoacrylate",
+      "Hydrogen peroxide",
+      "Para-phenylenediamine (PPD)"
+    ],
+    ans: 1,
+    exp: "Cyanoacrylate is the main bonding agent in lash extension adhesives. It can cause allergic contact reactions — particularly to the eyelids and surrounding skin. Sensitivity can develop over time even in clients who have had extensions without previous reaction."
+  },
+  {
+    q: "For a client with very sparse, patchy eyebrows, the BEST approach is to:",
+    opts: [
+      "Aggressively wax the shape and rely on regrowth to create fullness",
+      "Remove all visible stray hairs and tint to make fine existing hairs more visible",
+      "Apply chemical depilation to the entire brow and redraw with a pencil",
+      "Wax only the areas where regrowth is strong and ignore sparse areas"
+    ],
+    ans: 1,
+    exp: "For sparse brows, preserving all possible hair is the priority. Tinting can make fine, light hairs more visible for a fuller appearance. Over-removing hairs from already sparse brows worsens the condition. Brow makeup and growth-supporting serums complement the service."
   },
 
-  // ─── EYELASH & EYEBROW SERVICES — additional questions ───────────────────
-
-  {
+{
     q: "Before applying semi-permanent eyelash extensions, a patch test for the adhesive (cyanoacrylate-based) must be performed:",
     opts: [
       "On the inner forearm 24 hours before the appointment",
@@ -1652,11 +1647,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Classic brow mapping uses three reference lines drawn from the outer alar (base of the nose): (1) straight up = inner brow start; (2) through the pupil = arch peak; (3) through the outer canthus = tail end. The arch peak above the outer iris creates the illusion of lifted eyes and is proportionate to most faces. However, the esthetician should also account for the client's natural brow growth, facial shape, and personal preference."
-  },
+  }
+  ],
 
-  // ─── MAKEUP — new section ─────────────────────────────────────────────────
-
-  {
+  // mu
+  mu: [
+{
     q: "Foundation undertone selection is critical for a natural-looking makeup result. A client with a pink or ruddy complexion benefits MOST from a foundation with:",
     opts: [
       "A yellow or golden undertone, which neutralizes the excess redness",
@@ -1766,5 +1762,5 @@ window.EXAM_QUESTIONS = [
     ans: 1,
     exp: "OSHA's Hazard Communication Standard applies to any hazardous chemical in the workplace, including cosmetic products used professionally. Aerosol setting sprays and airbrush systems create fine mist particles that can be inhaled. SDS must be available for all such products. Good ventilation, appropriate respiratory protection during airbrush work, and avoiding direct inhalation of sprays are professional hygiene practices that protect the makeup artist."
   }
-
-];
+  ],
+};
