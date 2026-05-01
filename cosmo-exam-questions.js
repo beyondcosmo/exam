@@ -1,15 +1,14 @@
 // Cosmetology State Board Practice Exam — Question Bank
-// April 1, 2026 PSI Content Outline — 10 Categories
+// April 1, 2026 PSI Content Outline (effective for all CA test takers)
 // Safety & Infection Control 30% | Client Consultation & Analysis 19%
-// Chemical Texture Services 12% | Haircoloring 10% | Hair Removal 8%
-// Nail Care 8% | Eyelash & Eyebrow 4% | Skin Care 4% | Haircutting 3% | Hairstyling 2%
-// Target: 200 questions (2× the 100-question exam)
+// Chemical Texture 12% | Haircoloring 10% | Hair Removal 8% | Nail Care 8%
+// Eyelash & Eyebrow 4% | Skin Care 4% | Haircutting 3% | Hairstyling 2%
 
-window.EXAM_QUESTIONS = [
+window.QUESTION_BANK = {
 
-  // ─── SAFETY & INFECTION CONTROL (30%) — target 60 questions ─────────────
-
-  {
+  // sic
+  sic: [
+{
     q: "A cosmetologist is about to perform a color service when she notices the client has several small open lesions on the scalp. She should:",
     opts: [
       "Proceed with the color service after applying a barrier cream to the lesions",
@@ -646,11 +645,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "A sanitizer reduces (but does not eliminate) microbial counts on surfaces. For salon implements, California requires disinfection — not just sanitizing — using EPA-registered, bactericidal, virucidal, and fungicidal products."
-  },
+  }
+  ],
 
-  // ─── CLIENT CONSULTATION & HAIR/SKIN/NAIL ANALYSIS (19%) ─────────────────
-
-  {
+  // cc
+  cc: [
+{
     q: "The three layers of the hair shaft from outside to inside are:",
     opts: [
       "Cortex → Cuticle → Medulla",
@@ -882,9 +882,198 @@ window.EXAM_QUESTIONS = [
     exp: "Telogen is the resting phase. The mature hair remains in the follicle without growing for 2–4 months, then sheds as a new anagen-phase hair begins to grow. About 10–15% of scalp hairs are in telogen at any given time, accounting for the normal loss of 50–100 hairs per day."
   },
 
-  // ─── CHEMICAL TEXTURE SERVICES (12%) ─────────────────────────────────────
-
+{
+    q: "During a scalp analysis, you observe patches of silvery-white scales firmly attached to the scalp with redness beneath. This presentation is MOST consistent with:",
+    opts: [
+      "Pityriasis capitis (dandruff)",
+      "Psoriasis",
+      "Tinea capitis",
+      "Seborrheic dermatitis"
+    ],
+    ans: 1,
+    exp: "Psoriasis on the scalp presents as thick, silvery-white plaques on a red base. Unlike dandruff (loose white flakes) or seborrheic dermatitis (yellowish oily scales), psoriasis scales are tightly adherent. Tinea capitis causes patchy hair loss with scaling. A client with suspected psoriasis should be referred to a physician; cosmetologists cannot diagnose but must recognize when service is contraindicated."
+  },
   {
+    q: "A client's hair has a very high porosity level. Which service outcome should the cosmetologist anticipate?",
+    opts: [
+      "The hair will resist chemical services and take longer to process",
+      "Color and chemical services will process quickly and the hair may over-absorb product, leading to damage or uneven results",
+      "The hair will have a very shiny, smooth cuticle layer",
+      "Permanent wave solution will not penetrate effectively"
+    ],
+    ans: 1,
+    exp: "High-porosity hair has a raised, damaged, or open cuticle layer. It absorbs moisture and chemicals quickly — color can grab too fast (especially on ends), and perm solution processes faster than on low-porosity hair. Cosmetologists should use a lower-volume developer, apply color product to mid-lengths and ends last, and use a protein filler before color to equalize porosity."
+  },
+  {
+    q: "Which of the following is the BEST example of a 'closed' consultation question?",
+    opts: [
+      "\"What styles have you been loving lately?\"",
+      "\"Tell me about your morning routine.\"",
+      "\"Have you had a chemical service in the last six months?\"",
+      "\"How would you describe your hair at its worst?\""
+    ],
+    ans: 2,
+    exp: "Closed questions elicit a yes/no or specific factual answer and are important for gathering safety-critical intake information (chemical history, medications, allergies). The other options are open-ended questions, which are better for understanding lifestyle, preferences, and expectations. Effective consultations use both."
+  },
+  {
+    q: "A strand test performed before a chemical service primarily determines:",
+    opts: [
+      "The client's natural hair color level",
+      "Whether the hair is in a condition to withstand the service and how the hair will respond to the formula",
+      "The exact developer volume required",
+      "The elasticity of the hair only"
+    ],
+    ans: 1,
+    exp: "The strand test (test strand or preliminary strand test) exposes a small section of hair to the actual chemical formula for the planned processing time. It reveals porosity response, processing speed, color result, and whether the hair has sufficient strength to withstand the service without breakage. It is the most reliable pre-service safety check for any chemical service."
+  },
+  {
+    q: "The Fitzpatrick Scale used in cosmetology classifies:",
+    opts: [
+      "Hair texture from fine to coarse",
+      "Scalp conditions from mild to severe",
+      "Skin phototypes based on melanin content and UV response — from very fair (Type I) to very dark (Type VI)",
+      "Nail disorders by severity"
+    ],
+    ans: 2,
+    exp: "The Fitzpatrick Phototype Scale categorizes skin into six types based on melanin concentration and the skin's response to sun exposure. Type I is very fair skin that always burns and never tans; Type VI is very dark skin that never burns. This classification guides laser, light-based treatments, and chemical peel selection, as darker skin types are more prone to post-inflammatory hyperpigmentation."
+  },
+  {
+    q: "During hair analysis, a cosmetologist performs the wet-stretch test by stretching a strand of wet hair. A strand that stretches noticeably then DOES NOT return to its original length indicates:",
+    opts: [
+      "Normal, healthy elasticity",
+      "Low porosity",
+      "Poor elasticity — the disulfide bonds in the cortex are weakened, and the hair is at risk of breakage under chemical service",
+      "Very high cuticle density"
+    ],
+    ans: 2,
+    exp: "Healthy wet hair can stretch about 50% of its length and return. Hair with compromised elasticity (over-processed, damaged cortex) will overstretch and not spring back, indicating weakened disulfide bonds. Performing chemical services on hair with poor elasticity risks breakage. Treatments to rebuild protein structure should precede any chemical service."
+  },
+  {
+    q: "Which hair texture is MOST susceptible to breakage from chemical over-processing?",
+    opts: [
+      "Coarse hair with high porosity",
+      "Fine hair — because the cortex is smaller in diameter and there are fewer disulfide bonds to withstand chemical action",
+      "Medium texture hair",
+      "Coarse hair with low porosity"
+    ],
+    ans: 1,
+    exp: "Fine hair has a smaller-diameter cortex with fewer disulfide bonds relative to surface area. Chemical services reduce those bonds further; fine hair reaches the point of breakage faster than coarse hair. Cosmetologists should use milder formulas, shorter processing times, and extra strand-testing when working on fine hair."
+  },
+  {
+    q: "A client consultation form should document all of the following EXCEPT:",
+    opts: [
+      "Current medications that may affect hair, scalp, or skin",
+      "Allergies and past reactions to salon services",
+      "The client's annual household income",
+      "Recent chemical services and the products used"
+    ],
+    ans: 2,
+    exp: "Intake forms capture medically relevant information — medications (chemotherapy, retinoids, blood thinners), allergy history, recent chemical history — that directly affect service safety and results. Financial information is not a safety consideration and does not belong on a professional intake form."
+  },
+  {
+    q: "Alopecia areata appears clinically as:",
+    opts: [
+      "Gradual thinning along the top of the scalp in a diffuse pattern",
+      "One or more smooth, round patches of hair loss with no visible scalp scaling or inflammation",
+      "Circular patches of hair loss with broken stubs and grey scaling — a sign of fungal infection",
+      "Complete loss of body and scalp hair following chemotherapy"
+    ],
+    ans: 1,
+    exp: "Alopecia areata is an autoimmune condition causing sudden, round or oval patches of smooth hair loss. The scalp skin in the patch appears normal — no scaling, no redness. It differs from tinea capitis (ringworm — scaling, broken hairs) and androgenetic alopecia (gradual diffuse thinning). Cosmetologists cannot treat the condition; clients should be referred to a dermatologist."
+  },
+  {
+    q: "The cosmetologist's role when a client presents with a suspicious mole or skin lesion on the scalp is to:",
+    opts: [
+      "Apply a chemical relaxer over the area as usual — this does not affect skin conditions",
+      "Describe the lesion to the client and recommend they see a physician before proceeding with the service",
+      "Remove the lesion using a lancet during the service",
+      "Diagnose the lesion as benign and document it on the service record"
+    ],
+    ans: 1,
+    exp: "Cosmetologists are not licensed to diagnose or treat skin conditions. If an unusual mole, lesion, or growth is observed, the professional obligation is to note it to the client and recommend a physician evaluation. Chemical services should not be applied over suspicious lesions. Attempting to remove or diagnose lesions is outside scope of practice and illegal in California."
+  },
+  {
+    q: "When performing a scalp analysis before a relaxer service, pressing lightly with fingertips on the scalp reveals abrasions and open sores. The correct action is:",
+    opts: [
+      "Proceed with the relaxer and apply base cream more generously to protect the scalp",
+      "Postpone the relaxer until the scalp has fully healed — open skin creates a pathway for chemical burns and systemic absorption",
+      "Switch to a milder no-lye formula, which will be safe over broken skin",
+      "Apply the relaxer only to the mid-shaft and ends"
+    ],
+    ans: 1,
+    exp: "Open sores, cuts, or abrasions on the scalp are an absolute contraindication to relaxer services. Sodium or guanidine hydroxide will penetrate broken skin, causing severe chemical burns and potentially entering the bloodstream. No formulation is safe to apply to broken skin. The service must be postponed until the scalp is fully healed."
+  },
+  {
+    q: "During a color consultation, a client wants to go from level 3 (dark brown) to level 9 (light blonde) in a single session. The cosmetologist's MOST professional response is:",
+    opts: [
+      "Apply a high-lift color at 40-volume developer — this will lift 6 levels in one step",
+      "Explain that lifting 6 levels in one session typically requires bleaching and may require multiple appointments to preserve hair integrity, then discuss a realistic plan",
+      "Apply a permanent color over the dark hair — it will lighten sufficiently",
+      "Use a bleach bath on the entire head to achieve the target level safely in one visit"
+    ],
+    ans: 1,
+    exp: "Lifting 6+ levels in a single session is rarely achievable without significant damage, especially on virgin dark hair. The cosmetologist must conduct an honest consultation explaining the process (likely bleach + tone), the number of sessions needed, and the at-home care required to maintain integrity. High-lift color formulated for 4-level lift at most is insufficient for a level 3 to 9 lift."
+  },
+  {
+    q: "A client has medium-density, medium-textured hair. In terms of the amount of product to use for a relaxer service, this client requires:",
+    opts: [
+      "The maximum product amount because density increases absorption",
+      "A product amount appropriate for medium density — neither the minimum nor maximum application",
+      "Less product than a fine-textured client because medium hair is more resistant",
+      "Product choice should be based on scalp sensitivity, not hair density or texture"
+    ],
+    ans: 1,
+    exp: "Product amounts for chemical services are determined by hair density and texture together. A medium-density, medium-texture client falls in the middle of the scale. Applying too much relaxer can cause scalp irritation and over-processing; too little may give uneven results. Manufacturers' guidelines for medium hair should be followed."
+  },
+  {
+    q: "Canities is the technical term for:",
+    opts: [
+      "Excessive hair shedding",
+      "Gray or white hair caused by a reduction or absence of melanin in the cortex",
+      "A fungal infection of the hair shaft",
+      "Abnormal hair growth patterns"
+    ],
+    ans: 1,
+    exp: "Canities refers to gray or white hair. It occurs when melanocytes in the hair bulb reduce or stop producing melanin. Acquired canities develops with age (senile canities) or prematurely due to genetics (premature canities). Understanding canities is important for cosmetologists because gray hair has a tightly packed cuticle, low porosity, and often resists color absorption — requiring pre-softening or longer processing."
+  },
+  {
+    q: "A client with fine, color-treated hair requests a deep conditioning treatment. The cosmetologist recommends a protein treatment over a moisturizing treatment because:",
+    opts: [
+      "Moisturizing treatments are contraindicated for color-treated hair",
+      "Color-treated, fine hair has weakened bonds and reduced protein — a protein treatment temporarily fills gaps in the cortex, restoring strength and elasticity before further services",
+      "Protein treatments seal the cuticle more effectively than moisturizing treatments",
+      "Protein treatments are always the correct choice for all hair types"
+    ],
+    ans: 1,
+    exp: "Chemical color alters the disulfide bonds and can deplete the cortex's protein structure. Fine hair has a small cortex to begin with. Protein (keratin-based) treatments temporarily fill gaps in the hair shaft, improving elasticity and reducing breakage risk. However, too much protein can cause brittleness — a balanced approach combining protein with moisture is ideal for ongoing maintenance."
+  },
+  {
+    q: "Trichorrhexis nodosa appears as:",
+    opts: [
+      "A fungal infection of the hair causing circular bald patches",
+      "White nodules along the hair shaft where the cortex has split, causing the hair to snap easily at those points",
+      "A split end condition confined to the hair tips",
+      "A condition involving ingrown hairs on the scalp"
+    ],
+    ans: 1,
+    exp: "Trichorrhexis nodosa is a structural defect where the cortex fractures and frays at nodal points along the shaft, resembling two brushes pushed together. The affected hair snaps easily at the nodes. It is caused by excessive mechanical stress (aggressive brushing, heat), chemical damage, or nutritional deficiencies. Services should focus on gentle handling and strengthening treatments; no chemical service should be performed on actively affected hair."
+  },
+  {
+    q: "When analyzing a new client's scalp and you observe a \"tight scalp\" (scalp moves minimally when pressed), this most directly affects:",
+    opts: [
+      "Color absorption in the cortex",
+      "The choice of disinfectant for implements",
+      "Blood circulation to the follicle — reduced circulation may affect growth and response to scalp treatments",
+      "The angle at which to hold scissors during a haircut"
+    ],
+    ans: 2,
+    exp: "A tight scalp has reduced mobility due to muscle tension or chronic stress, which can impair blood and lymph circulation to the follicles. Good circulation delivers oxygen and nutrients to the papilla, supporting healthy hair growth. Scalp massage during services can help increase circulation. This analysis guides the recommendation of scalp treatments and massage."
+  }
+  ],
+
+  // ct
+  ct: [
+{
     q: "The natural pH of healthy hair is approximately:",
     opts: [
       "7.0 (neutral)",
@@ -1050,9 +1239,110 @@ window.EXAM_QUESTIONS = [
     exp: "The line of demarcation — where new growth meets previously relaxed hair — is the most vulnerable point. Over-lapping applies relaxer twice to already-processed hair, destroying the remaining disulfide bonds and causing breakage at that junction. Precise application technique prevents this."
   },
 
-  // ─── HAIRCOLORING (10%) ───────────────────────────────────────────────────
-
+{
+    q: "The processing time for a sodium hydroxide (lye) relaxer is primarily determined by:",
+    opts: [
+      "The brand of neutralizing shampoo to be used",
+      "The hair's natural texture, porosity, and the strength of the formula selected",
+      "The number of weeks since the client's last relaxer",
+      "The volume of developer used in the formula"
+    ],
+    ans: 1,
+    exp: "Sodium hydroxide relaxer processing time depends on the hair's natural curl pattern (coarser and tighter curl = longer time), porosity (high porosity processes faster), and the formula strength (mild, regular, super). Visual and tactile checks — the hair straightening as the product is applied — guide the timing. Over-processing causes chemical haircuts; under-processing leaves the hair under-straightened."
+  },
   {
+    q: "The neutralizing shampoo used after a chemical relaxer works by:",
+    opts: [
+      "Adding moisture to rehydrate the hair shaft",
+      "Lowering the pH to stop the chemical action of the hydroxide and restoring the hair's acid mantle",
+      "Removing the base cream applied before the service",
+      "Re-forming the disulfide bonds broken during relaxing"
+    ],
+    ans: 1,
+    exp: "Hydroxide relaxers raise hair pH to 12–14 to permanently break disulfide bonds. The neutralizing shampoo (pH 4.5–5.5) stops the alkaline action by lowering pH back toward the hair's natural acid mantle (4.5–5.5). Note: unlike thio relaxer neutralizers, hydroxide relaxer neutralizers do NOT re-form disulfide bonds — that reaction is permanent. The shampoo step simply halts further damage."
+  },
+  {
+    q: "A client who received a sodium hydroxide relaxer four months ago wants a thio (ammonium thioglycolate) relaxer today. The cosmetologist should:",
+    opts: [
+      "Apply the thio relaxer — both are relaxers and are compatible",
+      "Apply the thio relaxer only to the new growth, using the same formula on the previously relaxed ends",
+      "Decline the service — sodium hydroxide and thio relaxers are chemically incompatible; mixing them can cause severe breakage or hair loss",
+      "Perform a patch test and proceed if negative"
+    ],
+    ans: 2,
+    exp: "Sodium hydroxide (lye) and thioglycolate relaxers are chemically incompatible. Hydroxide relaxers permanently alter (lanthionize) the disulfide bonds; thio relaxers reduce disulfide bonds by a different mechanism. Applying thio chemistry to hydroxide-relaxed hair can cause extreme breakage and hair loss. This incompatibility is a fundamental safety rule in chemical texture services."
+  },
+  {
+    q: "When performing a virgin relaxer application, the product is typically applied:",
+    opts: [
+      "At the scalp first, then worked outward to the ends, timing the entire application from the scalp",
+      "Mid-shaft first, timed, then applied to the scalp and ends in the final minutes of processing",
+      "To the ends first, because they process most slowly",
+      "All at once with no sequencing — timing begins when the last section is covered"
+    ],
+    ans: 1,
+    exp: "For a virgin relaxer (first-time application), mid-shaft and ends are processed first because they are the most resistant (no previous chemical service). The formula is then brought to the scalp (most sensitive area) and ends in the final processing minutes. This staggered approach ensures even results and minimizes scalp exposure. Timing varies by formula and manufacturer instructions."
+  },
+  {
+    q: "An acid-balanced permanent wave uses a lower pH than alkaline waves. A key characteristic of acid waves is:",
+    opts: [
+      "They do not require heat and process completely at room temperature",
+      "They require the addition of heat (dryer or body heat) to activate, produce softer, looser curls, and are gentler on previously processed or fragile hair",
+      "They use glyceryl monothioglycolate which is incompatible with conditioned hair",
+      "They have a higher pH than alkaline waves"
+    ],
+    ans: 1,
+    exp: "Acid waves (pH 4.5–7.0, often glyceryl monothioglycolate) require heat to open the cuticle and allow penetration. They produce a gentler, natural-looking wave pattern and are appropriate for fine, fragile, or chemically processed hair. Alkaline waves (ammonium thioglycolate, pH 8.2–9.6) work at room temperature and produce a firmer, more defined curl. The choice is guided by the hair's condition and the desired result."
+  },
+  {
+    q: "After permanent wave neutralization, the purpose of rinsing the neutralizer thoroughly is to:",
+    opts: [
+      "Ensure the disulfide bonds break completely",
+      "Remove residual oxidizing neutralizer so that ongoing oxidation does not over-process the newly formed bonds or dry the hair",
+      "Raise the pH of the hair back to alkaline",
+      "Prepare the hair for immediate rebonding service"
+    ],
+    ans: 1,
+    exp: "Permanent wave neutralizers typically use hydrogen peroxide or sodium bromate. If residual oxidizer remains, it continues to react with the hair's newly formed disulfide bonds, weakening them over time. A thorough rinse stops the oxidation reaction, locks in the curl shape, and prevents over-oxidation that can lead to dryness and breakage."
+  },
+  {
+    q: "The diameter of the rod used in a permanent wave PRIMARILY affects:",
+    opts: [
+      "The processing time",
+      "The tightness of the curl — smaller diameter rods produce tighter curls; larger rods produce looser waves",
+      "The depth of penetration of the waving solution",
+      "Whether heat application is required"
+    ],
+    ans: 1,
+    exp: "Curl tightness in a perm is directly related to rod diameter. This is the same principle as using a small curling iron for tight spirals vs. a large barrel for loose waves. Smaller rods create more curvature in the hair during processing, resulting in tighter curls. This is one of the first consultation decisions when designing a permanent wave service."
+  },
+  {
+    q: "Lanthionization is the term for the chemical change that occurs during a hydroxide relaxer. It is significant because:",
+    opts: [
+      "It temporarily softens the disulfide bonds, which can be re-formed",
+      "It permanently converts two disulfide (–S–S–) bonds into a single lanthionine bond (–S–), which cannot be reversed — the hair structure is permanently altered",
+      "It raises the hair's pH to the level needed for color processing",
+      "It adds protein to the hair cortex"
+    ],
+    ans: 1,
+    exp: "Hydroxide relaxers (lye, no-lye, guanidine) work through lanthionization: the hydroxide ion breaks a cysteine disulfide bond and removes a sulfur atom, creating a single lanthionine bond. This is irreversible — unlike thio relaxers which can theoretically be reversed. Understanding this explains why lanthionized hair cannot be successfully processed with a thio relaxer and why hydroxide-relaxed hair requires special care."
+  },
+  {
+    q: "A client's perm is taking longer than the test curl indicates it should. One possible reason is:",
+    opts: [
+      "The rods are too large",
+      "The hair has low porosity — the tight cuticle is slowing penetration of the waving solution, requiring more time or a slightly stronger formula",
+      "The neutralizer was applied too early",
+      "The hair has excessive protein, which speeds processing"
+    ],
+    ans: 1,
+    exp: "Low-porosity hair has a tightly compacted cuticle that resists penetration of waving solutions, extending processing time. Remedies include applying gentle heat to open the cuticle or choosing an alkaline formula (which is more effective at low porosity than acid waves). Conversely, high-porosity hair over-processes quickly. Understanding porosity is essential for perm timing."
+  }
+  ],
+
+  // hcol
+  hcol: [
+{
     q: "The level system in haircoloring describes:",
     opts: [
       "The warmth or coolness of a hair color (its tone)",
@@ -1271,11 +1561,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 2,
     exp: "Highly porous hair has a compromised cuticle that absorbs color rapidly but cannot retain it — the color fades quickly. Protein and moisture fillers used before color can help equalize porosity. Permanent color fading within one week is NOT normal and indicates a hair condition issue."
-  },
+  }
+  ],
 
-  // ─── HAIR REMOVAL (8%) ───────────────────────────────────────────────────
-
-  {
+  // hr
+  hr: [
+{
     q: "Hard wax differs from soft (strip) wax in that hard wax:",
     opts: [
       "Must be applied with a muslin strip and removed immediately",
@@ -1461,11 +1752,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Waxing temporarily opens follicles, creating vulnerability to bacterial entry and inflammation. A post-wax antiseptic or soothing calming product (aloe, tea tree, azulene) reduces inflammation and bacterial colonization. Avoiding heat, sweat, and makeup prevents folliculitis development."
-  },
+  }
+  ],
 
-  // ─── NAIL CARE (8%) ──────────────────────────────────────────────────────
-
-  {
+  // nc
+  nc: [
+{
     q: "Under California law, a cosmetologist may legally perform which nail services?",
     opts: [
       "Advanced nail enhancements only, not basic manicures",
@@ -1640,11 +1932,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 2,
     exp: "The nails, along with skin, hair, sebaceous glands, and sweat glands, are part of the integumentary system — the body's external covering. Nails are appendages of the skin, derived from specialized keratinocytes in the nail matrix."
-  },
+  }
+  ],
 
-  // ─── EYELASH & EYEBROW (4%) ───────────────────────────────────────────────
-
-  {
+  // ee
+  ee: [
+{
     q: "Before applying any eyelash or eyebrow tint, a predisposition (patch) test MUST be performed because:",
     opts: [
       "It is a suggested best practice but not required",
@@ -1731,11 +2024,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Eyelash tint or developer in contact with the eye causes irritation and can cause serious eye injury. Any sign of eye irritation requires immediately stopping the service, removing all product carefully, and flushing the eye thoroughly with cool water. Severe reactions warrant medical attention."
-  },
+  }
+  ],
 
-  // ─── SKIN CARE (4%) ──────────────────────────────────────────────────────
-
-  {
+  // sc
+  sc: [
+{
     q: "As a cosmetologist, your scope of skin care practice includes:",
     opts: [
       "Diagnosing and treating acne and rosacea",
@@ -1822,11 +2116,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Telangiectasia results from fragile, dilated capillaries near the skin surface. Heat, pressure, and aggressive friction directly over affected areas can rupture these vessels or worsen their dilation. Gentle services avoiding heat and pressure over the affected areas are appropriate."
-  },
+  }
+  ],
 
-  // ─── HAIRCUTTING (3%) ────────────────────────────────────────────────────
-
-  {
+  // hc
+  hc: [
+{
     q: "A blunt (one-length) haircut is created by:",
     opts: [
       "Cutting all sections at a 90-degree elevation from the head",
@@ -1891,11 +2186,12 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Thinning shears have one or both blades serrated with teeth that cut some hairs while leaving others uncut. This thins bulk and blends layers without creating sharp lines. They should be used with care — overuse can create over-thinned, frizzy hair."
-  },
+  }
+  ],
 
-  // ─── HAIRSTYLING (2%) ────────────────────────────────────────────────────
-
-  {
+  // hs
+  hs: [
+{
     q: "When blow-drying curly hair to straighten it, the cosmetologist should:",
     opts: [
       "Use the highest heat setting for fastest straightening",
@@ -1938,299 +2234,6 @@ window.EXAM_QUESTIONS = [
     ],
     ans: 1,
     exp: "Wet setting works by placing damp hair on rollers; as the hair dries, hydrogen bonds (the weakest and most temporary bonds) reform in the roller-shaped pattern. The style is temporary — heat, moisture, or humidity will break these hydrogen bonds and return the hair to its natural form."
-  },
-
-  // ─── CLIENT CONSULTATION & ANALYSIS — additional questions ────────────────
-
-  {
-    q: "During a scalp analysis, you observe patches of silvery-white scales firmly attached to the scalp with redness beneath. This presentation is MOST consistent with:",
-    opts: [
-      "Pityriasis capitis (dandruff)",
-      "Psoriasis",
-      "Tinea capitis",
-      "Seborrheic dermatitis"
-    ],
-    ans: 1,
-    exp: "Psoriasis on the scalp presents as thick, silvery-white plaques on a red base. Unlike dandruff (loose white flakes) or seborrheic dermatitis (yellowish oily scales), psoriasis scales are tightly adherent. Tinea capitis causes patchy hair loss with scaling. A client with suspected psoriasis should be referred to a physician; cosmetologists cannot diagnose but must recognize when service is contraindicated."
-  },
-  {
-    q: "A client's hair has a very high porosity level. Which service outcome should the cosmetologist anticipate?",
-    opts: [
-      "The hair will resist chemical services and take longer to process",
-      "Color and chemical services will process quickly and the hair may over-absorb product, leading to damage or uneven results",
-      "The hair will have a very shiny, smooth cuticle layer",
-      "Permanent wave solution will not penetrate effectively"
-    ],
-    ans: 1,
-    exp: "High-porosity hair has a raised, damaged, or open cuticle layer. It absorbs moisture and chemicals quickly — color can grab too fast (especially on ends), and perm solution processes faster than on low-porosity hair. Cosmetologists should use a lower-volume developer, apply color product to mid-lengths and ends last, and use a protein filler before color to equalize porosity."
-  },
-  {
-    q: "Which of the following is the BEST example of a 'closed' consultation question?",
-    opts: [
-      "\"What styles have you been loving lately?\"",
-      "\"Tell me about your morning routine.\"",
-      "\"Have you had a chemical service in the last six months?\"",
-      "\"How would you describe your hair at its worst?\""
-    ],
-    ans: 2,
-    exp: "Closed questions elicit a yes/no or specific factual answer and are important for gathering safety-critical intake information (chemical history, medications, allergies). The other options are open-ended questions, which are better for understanding lifestyle, preferences, and expectations. Effective consultations use both."
-  },
-  {
-    q: "A strand test performed before a chemical service primarily determines:",
-    opts: [
-      "The client's natural hair color level",
-      "Whether the hair is in a condition to withstand the service and how the hair will respond to the formula",
-      "The exact developer volume required",
-      "The elasticity of the hair only"
-    ],
-    ans: 1,
-    exp: "The strand test (test strand or preliminary strand test) exposes a small section of hair to the actual chemical formula for the planned processing time. It reveals porosity response, processing speed, color result, and whether the hair has sufficient strength to withstand the service without breakage. It is the most reliable pre-service safety check for any chemical service."
-  },
-  {
-    q: "The Fitzpatrick Scale used in cosmetology classifies:",
-    opts: [
-      "Hair texture from fine to coarse",
-      "Scalp conditions from mild to severe",
-      "Skin phototypes based on melanin content and UV response — from very fair (Type I) to very dark (Type VI)",
-      "Nail disorders by severity"
-    ],
-    ans: 2,
-    exp: "The Fitzpatrick Phototype Scale categorizes skin into six types based on melanin concentration and the skin's response to sun exposure. Type I is very fair skin that always burns and never tans; Type VI is very dark skin that never burns. This classification guides laser, light-based treatments, and chemical peel selection, as darker skin types are more prone to post-inflammatory hyperpigmentation."
-  },
-  {
-    q: "During hair analysis, a cosmetologist performs the wet-stretch test by stretching a strand of wet hair. A strand that stretches noticeably then DOES NOT return to its original length indicates:",
-    opts: [
-      "Normal, healthy elasticity",
-      "Low porosity",
-      "Poor elasticity — the disulfide bonds in the cortex are weakened, and the hair is at risk of breakage under chemical service",
-      "Very high cuticle density"
-    ],
-    ans: 2,
-    exp: "Healthy wet hair can stretch about 50% of its length and return. Hair with compromised elasticity (over-processed, damaged cortex) will overstretch and not spring back, indicating weakened disulfide bonds. Performing chemical services on hair with poor elasticity risks breakage. Treatments to rebuild protein structure should precede any chemical service."
-  },
-  {
-    q: "Which hair texture is MOST susceptible to breakage from chemical over-processing?",
-    opts: [
-      "Coarse hair with high porosity",
-      "Fine hair — because the cortex is smaller in diameter and there are fewer disulfide bonds to withstand chemical action",
-      "Medium texture hair",
-      "Coarse hair with low porosity"
-    ],
-    ans: 1,
-    exp: "Fine hair has a smaller-diameter cortex with fewer disulfide bonds relative to surface area. Chemical services reduce those bonds further; fine hair reaches the point of breakage faster than coarse hair. Cosmetologists should use milder formulas, shorter processing times, and extra strand-testing when working on fine hair."
-  },
-  {
-    q: "A client consultation form should document all of the following EXCEPT:",
-    opts: [
-      "Current medications that may affect hair, scalp, or skin",
-      "Allergies and past reactions to salon services",
-      "The client's annual household income",
-      "Recent chemical services and the products used"
-    ],
-    ans: 2,
-    exp: "Intake forms capture medically relevant information — medications (chemotherapy, retinoids, blood thinners), allergy history, recent chemical history — that directly affect service safety and results. Financial information is not a safety consideration and does not belong on a professional intake form."
-  },
-  {
-    q: "Alopecia areata appears clinically as:",
-    opts: [
-      "Gradual thinning along the top of the scalp in a diffuse pattern",
-      "One or more smooth, round patches of hair loss with no visible scalp scaling or inflammation",
-      "Circular patches of hair loss with broken stubs and grey scaling — a sign of fungal infection",
-      "Complete loss of body and scalp hair following chemotherapy"
-    ],
-    ans: 1,
-    exp: "Alopecia areata is an autoimmune condition causing sudden, round or oval patches of smooth hair loss. The scalp skin in the patch appears normal — no scaling, no redness. It differs from tinea capitis (ringworm — scaling, broken hairs) and androgenetic alopecia (gradual diffuse thinning). Cosmetologists cannot treat the condition; clients should be referred to a dermatologist."
-  },
-  {
-    q: "The cosmetologist's role when a client presents with a suspicious mole or skin lesion on the scalp is to:",
-    opts: [
-      "Apply a chemical relaxer over the area as usual — this does not affect skin conditions",
-      "Describe the lesion to the client and recommend they see a physician before proceeding with the service",
-      "Remove the lesion using a lancet during the service",
-      "Diagnose the lesion as benign and document it on the service record"
-    ],
-    ans: 1,
-    exp: "Cosmetologists are not licensed to diagnose or treat skin conditions. If an unusual mole, lesion, or growth is observed, the professional obligation is to note it to the client and recommend a physician evaluation. Chemical services should not be applied over suspicious lesions. Attempting to remove or diagnose lesions is outside scope of practice and illegal in California."
-  },
-  {
-    q: "When performing a scalp analysis before a relaxer service, pressing lightly with fingertips on the scalp reveals abrasions and open sores. The correct action is:",
-    opts: [
-      "Proceed with the relaxer and apply base cream more generously to protect the scalp",
-      "Postpone the relaxer until the scalp has fully healed — open skin creates a pathway for chemical burns and systemic absorption",
-      "Switch to a milder no-lye formula, which will be safe over broken skin",
-      "Apply the relaxer only to the mid-shaft and ends"
-    ],
-    ans: 1,
-    exp: "Open sores, cuts, or abrasions on the scalp are an absolute contraindication to relaxer services. Sodium or guanidine hydroxide will penetrate broken skin, causing severe chemical burns and potentially entering the bloodstream. No formulation is safe to apply to broken skin. The service must be postponed until the scalp is fully healed."
-  },
-  {
-    q: "During a color consultation, a client wants to go from level 3 (dark brown) to level 9 (light blonde) in a single session. The cosmetologist's MOST professional response is:",
-    opts: [
-      "Apply a high-lift color at 40-volume developer — this will lift 6 levels in one step",
-      "Explain that lifting 6 levels in one session typically requires bleaching and may require multiple appointments to preserve hair integrity, then discuss a realistic plan",
-      "Apply a permanent color over the dark hair — it will lighten sufficiently",
-      "Use a bleach bath on the entire head to achieve the target level safely in one visit"
-    ],
-    ans: 1,
-    exp: "Lifting 6+ levels in a single session is rarely achievable without significant damage, especially on virgin dark hair. The cosmetologist must conduct an honest consultation explaining the process (likely bleach + tone), the number of sessions needed, and the at-home care required to maintain integrity. High-lift color formulated for 4-level lift at most is insufficient for a level 3 to 9 lift."
-  },
-  {
-    q: "A client has medium-density, medium-textured hair. In terms of the amount of product to use for a relaxer service, this client requires:",
-    opts: [
-      "The maximum product amount because density increases absorption",
-      "A product amount appropriate for medium density — neither the minimum nor maximum application",
-      "Less product than a fine-textured client because medium hair is more resistant",
-      "Product choice should be based on scalp sensitivity, not hair density or texture"
-    ],
-    ans: 1,
-    exp: "Product amounts for chemical services are determined by hair density and texture together. A medium-density, medium-texture client falls in the middle of the scale. Applying too much relaxer can cause scalp irritation and over-processing; too little may give uneven results. Manufacturers' guidelines for medium hair should be followed."
-  },
-  {
-    q: "Canities is the technical term for:",
-    opts: [
-      "Excessive hair shedding",
-      "Gray or white hair caused by a reduction or absence of melanin in the cortex",
-      "A fungal infection of the hair shaft",
-      "Abnormal hair growth patterns"
-    ],
-    ans: 1,
-    exp: "Canities refers to gray or white hair. It occurs when melanocytes in the hair bulb reduce or stop producing melanin. Acquired canities develops with age (senile canities) or prematurely due to genetics (premature canities). Understanding canities is important for cosmetologists because gray hair has a tightly packed cuticle, low porosity, and often resists color absorption — requiring pre-softening or longer processing."
-  },
-  {
-    q: "A client with fine, color-treated hair requests a deep conditioning treatment. The cosmetologist recommends a protein treatment over a moisturizing treatment because:",
-    opts: [
-      "Moisturizing treatments are contraindicated for color-treated hair",
-      "Color-treated, fine hair has weakened bonds and reduced protein — a protein treatment temporarily fills gaps in the cortex, restoring strength and elasticity before further services",
-      "Protein treatments seal the cuticle more effectively than moisturizing treatments",
-      "Protein treatments are always the correct choice for all hair types"
-    ],
-    ans: 1,
-    exp: "Chemical color alters the disulfide bonds and can deplete the cortex's protein structure. Fine hair has a small cortex to begin with. Protein (keratin-based) treatments temporarily fill gaps in the hair shaft, improving elasticity and reducing breakage risk. However, too much protein can cause brittleness — a balanced approach combining protein with moisture is ideal for ongoing maintenance."
-  },
-  {
-    q: "Trichorrhexis nodosa appears as:",
-    opts: [
-      "A fungal infection of the hair causing circular bald patches",
-      "White nodules along the hair shaft where the cortex has split, causing the hair to snap easily at those points",
-      "A split end condition confined to the hair tips",
-      "A condition involving ingrown hairs on the scalp"
-    ],
-    ans: 1,
-    exp: "Trichorrhexis nodosa is a structural defect where the cortex fractures and frays at nodal points along the shaft, resembling two brushes pushed together. The affected hair snaps easily at the nodes. It is caused by excessive mechanical stress (aggressive brushing, heat), chemical damage, or nutritional deficiencies. Services should focus on gentle handling and strengthening treatments; no chemical service should be performed on actively affected hair."
-  },
-  {
-    q: "When analyzing a new client's scalp and you observe a \"tight scalp\" (scalp moves minimally when pressed), this most directly affects:",
-    opts: [
-      "Color absorption in the cortex",
-      "The choice of disinfectant for implements",
-      "Blood circulation to the follicle — reduced circulation may affect growth and response to scalp treatments",
-      "The angle at which to hold scissors during a haircut"
-    ],
-    ans: 2,
-    exp: "A tight scalp has reduced mobility due to muscle tension or chronic stress, which can impair blood and lymph circulation to the follicles. Good circulation delivers oxygen and nutrients to the papilla, supporting healthy hair growth. Scalp massage during services can help increase circulation. This analysis guides the recommendation of scalp treatments and massage."
-  },
-
-  // ─── CHEMICAL TEXTURE SERVICES — additional questions ─────────────────────
-
-  {
-    q: "The processing time for a sodium hydroxide (lye) relaxer is primarily determined by:",
-    opts: [
-      "The brand of neutralizing shampoo to be used",
-      "The hair's natural texture, porosity, and the strength of the formula selected",
-      "The number of weeks since the client's last relaxer",
-      "The volume of developer used in the formula"
-    ],
-    ans: 1,
-    exp: "Sodium hydroxide relaxer processing time depends on the hair's natural curl pattern (coarser and tighter curl = longer time), porosity (high porosity processes faster), and the formula strength (mild, regular, super). Visual and tactile checks — the hair straightening as the product is applied — guide the timing. Over-processing causes chemical haircuts; under-processing leaves the hair under-straightened."
-  },
-  {
-    q: "The neutralizing shampoo used after a chemical relaxer works by:",
-    opts: [
-      "Adding moisture to rehydrate the hair shaft",
-      "Lowering the pH to stop the chemical action of the hydroxide and restoring the hair's acid mantle",
-      "Removing the base cream applied before the service",
-      "Re-forming the disulfide bonds broken during relaxing"
-    ],
-    ans: 1,
-    exp: "Hydroxide relaxers raise hair pH to 12–14 to permanently break disulfide bonds. The neutralizing shampoo (pH 4.5–5.5) stops the alkaline action by lowering pH back toward the hair's natural acid mantle (4.5–5.5). Note: unlike thio relaxer neutralizers, hydroxide relaxer neutralizers do NOT re-form disulfide bonds — that reaction is permanent. The shampoo step simply halts further damage."
-  },
-  {
-    q: "A client who received a sodium hydroxide relaxer four months ago wants a thio (ammonium thioglycolate) relaxer today. The cosmetologist should:",
-    opts: [
-      "Apply the thio relaxer — both are relaxers and are compatible",
-      "Apply the thio relaxer only to the new growth, using the same formula on the previously relaxed ends",
-      "Decline the service — sodium hydroxide and thio relaxers are chemically incompatible; mixing them can cause severe breakage or hair loss",
-      "Perform a patch test and proceed if negative"
-    ],
-    ans: 2,
-    exp: "Sodium hydroxide (lye) and thioglycolate relaxers are chemically incompatible. Hydroxide relaxers permanently alter (lanthionize) the disulfide bonds; thio relaxers reduce disulfide bonds by a different mechanism. Applying thio chemistry to hydroxide-relaxed hair can cause extreme breakage and hair loss. This incompatibility is a fundamental safety rule in chemical texture services."
-  },
-  {
-    q: "When performing a virgin relaxer application, the product is typically applied:",
-    opts: [
-      "At the scalp first, then worked outward to the ends, timing the entire application from the scalp",
-      "Mid-shaft first, timed, then applied to the scalp and ends in the final minutes of processing",
-      "To the ends first, because they process most slowly",
-      "All at once with no sequencing — timing begins when the last section is covered"
-    ],
-    ans: 1,
-    exp: "For a virgin relaxer (first-time application), mid-shaft and ends are processed first because they are the most resistant (no previous chemical service). The formula is then brought to the scalp (most sensitive area) and ends in the final processing minutes. This staggered approach ensures even results and minimizes scalp exposure. Timing varies by formula and manufacturer instructions."
-  },
-  {
-    q: "An acid-balanced permanent wave uses a lower pH than alkaline waves. A key characteristic of acid waves is:",
-    opts: [
-      "They do not require heat and process completely at room temperature",
-      "They require the addition of heat (dryer or body heat) to activate, produce softer, looser curls, and are gentler on previously processed or fragile hair",
-      "They use glyceryl monothioglycolate which is incompatible with conditioned hair",
-      "They have a higher pH than alkaline waves"
-    ],
-    ans: 1,
-    exp: "Acid waves (pH 4.5–7.0, often glyceryl monothioglycolate) require heat to open the cuticle and allow penetration. They produce a gentler, natural-looking wave pattern and are appropriate for fine, fragile, or chemically processed hair. Alkaline waves (ammonium thioglycolate, pH 8.2–9.6) work at room temperature and produce a firmer, more defined curl. The choice is guided by the hair's condition and the desired result."
-  },
-  {
-    q: "After permanent wave neutralization, the purpose of rinsing the neutralizer thoroughly is to:",
-    opts: [
-      "Ensure the disulfide bonds break completely",
-      "Remove residual oxidizing neutralizer so that ongoing oxidation does not over-process the newly formed bonds or dry the hair",
-      "Raise the pH of the hair back to alkaline",
-      "Prepare the hair for immediate rebonding service"
-    ],
-    ans: 1,
-    exp: "Permanent wave neutralizers typically use hydrogen peroxide or sodium bromate. If residual oxidizer remains, it continues to react with the hair's newly formed disulfide bonds, weakening them over time. A thorough rinse stops the oxidation reaction, locks in the curl shape, and prevents over-oxidation that can lead to dryness and breakage."
-  },
-  {
-    q: "The diameter of the rod used in a permanent wave PRIMARILY affects:",
-    opts: [
-      "The processing time",
-      "The tightness of the curl — smaller diameter rods produce tighter curls; larger rods produce looser waves",
-      "The depth of penetration of the waving solution",
-      "Whether heat application is required"
-    ],
-    ans: 1,
-    exp: "Curl tightness in a perm is directly related to rod diameter. This is the same principle as using a small curling iron for tight spirals vs. a large barrel for loose waves. Smaller rods create more curvature in the hair during processing, resulting in tighter curls. This is one of the first consultation decisions when designing a permanent wave service."
-  },
-  {
-    q: "Lanthionization is the term for the chemical change that occurs during a hydroxide relaxer. It is significant because:",
-    opts: [
-      "It temporarily softens the disulfide bonds, which can be re-formed",
-      "It permanently converts two disulfide (–S–S–) bonds into a single lanthionine bond (–S–), which cannot be reversed — the hair structure is permanently altered",
-      "It raises the hair's pH to the level needed for color processing",
-      "It adds protein to the hair cortex"
-    ],
-    ans: 1,
-    exp: "Hydroxide relaxers (lye, no-lye, guanidine) work through lanthionization: the hydroxide ion breaks a cysteine disulfide bond and removes a sulfur atom, creating a single lanthionine bond. This is irreversible — unlike thio relaxers which can theoretically be reversed. Understanding this explains why lanthionized hair cannot be successfully processed with a thio relaxer and why hydroxide-relaxed hair requires special care."
-  },
-  {
-    q: "A client's perm is taking longer than the test curl indicates it should. One possible reason is:",
-    opts: [
-      "The rods are too large",
-      "The hair has low porosity — the tight cuticle is slowing penetration of the waving solution, requiring more time or a slightly stronger formula",
-      "The neutralizer was applied too early",
-      "The hair has excessive protein, which speeds processing"
-    ],
-    ans: 1,
-    exp: "Low-porosity hair has a tightly compacted cuticle that resists penetration of waving solutions, extending processing time. Remedies include applying gentle heat to open the cuticle or choosing an alkaline formula (which is more effective at low porosity than acid waves). Conversely, high-porosity hair over-processes quickly. Understanding porosity is essential for perm timing."
-  },
-
-];
-
+  }
+  ],
+};
